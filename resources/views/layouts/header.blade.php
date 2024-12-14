@@ -5,19 +5,19 @@
             <div class="col-lg-3 d-lg-block d-none">
                 <div class="announcement-call-wrapper">
                     <div class="announcement-call">
-                        <a class="announcement-text text-white" href="tel:+1-078-2376">Call: +1 078 2376</a>
+                        <a class="announcement-text text-white" href="tel:+1-078-2376">Call: +6285 231 286 306</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-12">
                 <div class="announcement-text-wrapper d-flex align-items-center justify-content-center">
-                    <p class="announcement-text text-white">New year sale - 30% off</p>
+                    <p class="announcement-text text-white">Diskon tahun baru 30%</p>
                 </div>
             </div>
             <div class="col-lg-3 d-lg-block d-none">
                 <div class="announcement-meta-wrapper d-flex align-items-center justify-content-end">
                     <div class="announcement-meta d-flex align-items-center">
-                        <a class="announcement-login announcement-text text-white" href="login.html">
+                        <a class="announcement-login announcement-text text-white" href="#">
                             <svg class="icon icon-user" width="10" height="11" viewBox="0 0 10 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -93,7 +93,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-4 col-4">
                     <div class="header-logo">
-                        <a href="index.html" class="logo-main">
+                        <a href="#" class="logo-main">
                             <img src="{{ asset('') }}assets/img/logo.png" loading="lazy" alt="bisum">
                         </a>
                     </div>
@@ -103,7 +103,7 @@
                         <ul class="main-menu list-unstyled justify-content-center">
                             <li class="menu-list-item nav-item has-dropdown active">
                                 <div class="mega-menu-header">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="/">
                                         Home
                                     </a>
                                     {{-- <span class="open-submenu">
@@ -137,7 +137,7 @@
                             </li>
                             <li class="menu-list-item nav-item has-megamenu">
                                 <div class="mega-menu-header">
-                                    <a class="nav-link" href="collection-left-sidebar.html">
+                                    <a class="nav-link" href="/produk">
                                         Shop
                                     </a>
                                     <span class="open-submenu">
