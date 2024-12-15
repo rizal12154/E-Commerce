@@ -17,7 +17,7 @@
             <div class="col-lg-3 d-lg-block d-none">
                 <div class="announcement-meta-wrapper d-flex align-items-center justify-content-end">
                     <div class="announcement-meta d-flex align-items-center">
-                        <a class="announcement-login announcement-text text-white" href="#">
+                        <a class="announcement-login announcement-text text-white" href="/login">
                             <svg class="icon icon-user" width="10" height="11" viewBox="0 0 10 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -33,13 +33,13 @@
                             </svg>
                         </span>
                         <div class="currency-wrapper">
-                            <button type="button" class="currency-btn btn-reset text-white"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <button type="button" class="currency-btn btn-reset text-white" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <img class="flag" src="{{ asset('') }}assets/img/flag/usd.jpg" alt="img">
                                 <span>USD</span>
                                 <span>
-                                    <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                    <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="#fff"
                                         stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="6 9 12 15 18 9"></polyline>
                                     </svg>
@@ -49,31 +49,36 @@
                             <ul class="currency-list dropdown-menu dropdown-menu-end px-2">
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="USD">
-                                        <img class="flag" src="{{ asset('') }}assets/img/flag/usd.jpg" alt="img">
+                                        <img class="flag" src="{{ asset('') }}assets/img/flag/usd.jpg"
+                                            alt="img">
                                         <span>USD</span>
                                     </a>
                                 </li>
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="CAD">
-                                        <img class="flag" src="{{ asset('') }}assets/img/flag/cad.jpg" alt="img">
+                                        <img class="flag" src="{{ asset('') }}assets/img/flag/cad.jpg"
+                                            alt="img">
                                         <span>CAD</span>
                                     </a>
                                 </li>
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="EUR">
-                                        <img class="flag" src="{{ asset('') }}assets/img/flag/eur.jpg" alt="img">
+                                        <img class="flag" src="{{ asset('') }}assets/img/flag/eur.jpg"
+                                            alt="img">
                                         <span>EUR</span>
                                     </a>
                                 </li>
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="JPY">
-                                        <img class="flag" src="{{ asset('') }}assets/img/flag/jpy.jpg" alt="img">
+                                        <img class="flag" src="{{ asset('') }}assets/img/flag/jpy.jpg"
+                                            alt="img">
                                         <span>JPY</span>
                                     </a>
                                 </li>
                                 <li class="currency-list-item ">
                                     <a class="currency-list-option" href="#" data-value="GBP">
-                                        <img class="flag" src="{{ asset('') }}assets/img/flag/gbp.jpg" alt="img">
+                                        <img class="flag" src="{{ asset('') }}assets/img/flag/gbp.jpg"
+                                            alt="img">
                                         <span>GBP</span>
                                     </a>
                                 </li>
@@ -101,188 +106,21 @@
                 <div class="col-lg-6 d-lg-block d-none">
                     <nav class="site-navigation">
                         <ul class="main-menu list-unstyled justify-content-center">
-                            <li class="menu-list-item nav-item has-dropdown active">
+                            <li class="menu-list-item nav-item has-megamenu">
                                 <div class="mega-menu-header">
-                                    <a class="nav-link" href="/">
+                                    <a class="nav-link" href="/home">
                                         Home
                                     </a>
-                                    {{-- <span class="open-submenu">
-                                        <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                        </span>
-                                    </svg> --}}
                                 </div>
-                                {{-- <div class="submenu-transform submenu-transform-desktop">
-                                    <ul class="submenu list-unstyled">
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="index.html">Home 1</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="index-shoe.html">Home
-                                                2</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="index-bag.html">Home
-                                                3</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="index-tools.html">Home
-                                                4</a>
-                                        </li>
-                                    </ul>
-                                </div> --}}
                             </li>
                             <li class="menu-list-item nav-item has-megamenu">
                                 <div class="mega-menu-header">
                                     <a class="nav-link" href="/produk">
                                         Shop
                                     </a>
-                                    {{-- <span class="open-submenu">
-                                        <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                        </svg>
-                                    </span> --}}
                                 </div>
-                                {{-- <div class="submenu-transform submenu-transform-desktop">
-                                    <div class="container">
-                                        <ul class="submenu megamenu-container list-unstyled">
-                                            <li class="menu-list-item nav-item-sub">
-                                                <div class="mega-menu-header">
-                                                    <a class="nav-link-sub nav-text-sub megamenu-heading"
-                                                        href="collection-left-sidebar.html">
-                                                        CATEGORY PAGES
-                                                    </a>
-                                                </div>
-                                                <div class="submenu-transform megamenu-transform">
-                                                    <ul class="megamenu list-unstyled">
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="collection-left-sidebar.html">With Left
-                                                                Sidebar</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="collection-right-sidebar.html">With Right
-                                                                Sidebar</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="collection-left-sidebar.html">3 Column
-                                                                Layout</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="collection-without-sidebar.html">4 Column
-                                                                Layout</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="collection-without-sidebar.html">Without
-                                                                Sidebar</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu-list-item nav-item-sub">
-                                                <div
-                                                    class="mega-menu-header d-flex align-items-center justify-content-between">
-                                                    <a class="nav-link-sub nav-text-sub megamenu-heading"
-                                                        href="collection-right-sidebar.html">
-                                                        PRODUCT PAGES
-                                                    </a>
-                                                </div>
-                                                <div class="submenu-transform megamenu-transform">
-                                                    <ul class="megamenu list-unstyled">
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product.html">Simple Product</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product.html">Variable Product</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product.html">Sale Product</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product.html">Featured & On Sale</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product-2.html">Tab Inside</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu-list-item nav-item-sub">
-                                                <div
-                                                    class="mega-menu-header d-flex align-items-center justify-content-between">
-                                                    <a class="nav-link-sub nav-text-sub megamenu-heading"
-                                                        href="index.html">
-                                                        PRODUCT LAYOUTS
-                                                    </a>
-                                                </div>
-                                                <div class="submenu-transform megamenu-transform">
-                                                    <ul class="megamenu list-unstyled">
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product-2.html">Grid Images</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product.html">Vertical Thumb</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product.html">Gallery Type</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product.html">Product Width Layout</a>
-                                                        </li>
-                                                        <li class="menu-list-item nav-item-sub">
-                                                            <a class="nav-link-sub nav-text-sub"
-                                                                href="product.html">Sticky Gallery</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="menu-list-item nav-item-sub">
-                                                <div
-                                                    class="mega-menu-header d-flex align-items-center justify-content-between">
-                                                    <a class="mega-menu-img nav-link-sub nav-text-sub"
-                                                        href="collection-left-sidebar.html">
-                                                        <img class="menu-img" src="{{ asset('') }}assets/img/menu/1.jpg" alt="img">
-                                                        <h2 class="img-menu-heading text_16 mt-2">Featured
-                                                            Collection</h2>
-                                                        <div
-                                                            class="img-menu-action text_12 bg-transparent p-0">
-                                                            <span>DISCOVER NOW</span>
-                                                            <span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg"
-                                                                    width="30" height="18" fill="#000"
-                                                                    class="icon-right-long" viewBox="0 0 16 16">
-                                                                    <path fill-rule="evenodd"
-                                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div> --}}
                             </li>
-                            <li class="menu-list-item nav-item has-dropdown">
+                            {{-- <li class="menu-list-item nav-item has-dropdown">
                                 <div class="mega-menu-header">
                                     <a class="nav-link" href="about-us.html">
                                         Pages
@@ -315,23 +153,20 @@
                                             <a class="nav-link-sub nav-text-sub" href="login.html">Login</a>
                                         </li>
                                         <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub"
-                                                href="register.html">Register</a>
+                                            <a class="nav-link-sub nav-text-sub" href="register.html">Register</a>
                                         </li>
                                         <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub"
-                                                href="wishlist.html">Wishlist</a>
+                                            <a class="nav-link-sub nav-text-sub" href="wishlist.html">Wishlist</a>
                                         </li>
                                         <li class="menu-list-item nav-item-sub">
                                             <a class="nav-link-sub nav-text-sub" href="cart.html">Cart</a>
                                         </li>
                                         <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub"
-                                                href="checkout.html">Checkout</a>
+                                            <a class="nav-link-sub nav-text-sub" href="checkout.html">Checkout</a>
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> --}}
                             <li class="menu-list-item nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
@@ -341,15 +176,14 @@
                 <div class="col-lg-3 col-md-8 col-8">
                     <div class="header-action d-flex align-items-center justify-content-end">
                         <a class="header-action-item header-search" href="javascript:void(0)">
-                            <svg class="icon icon-search" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="icon icon-search" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M7.75 0.250183C11.8838 0.250183 15.25 3.61639 15.25 7.75018C15.25 9.54608 14.6201 11.1926 13.5625 12.4846L19.5391 18.4611L18.4609 19.5392L12.4844 13.5627C11.1924 14.6203 9.5459 15.2502 7.75 15.2502C3.61621 15.2502 0.25 11.884 0.25 7.75018C0.25 3.61639 3.61621 0.250183 7.75 0.250183ZM7.75 1.75018C4.42773 1.75018 1.75 4.42792 1.75 7.75018C1.75 11.0724 4.42773 13.7502 7.75 13.7502C11.0723 13.7502 13.75 11.0724 13.75 7.75018C13.75 4.42792 11.0723 1.75018 7.75 1.75018Z"
                                     fill="black" />
                             </svg>
                         </a>
-                        <a class="header-action-item header-wishlist ms-4 d-none d-lg-block"
-                            href="wishlist.html">
+                        <a class="header-action-item header-wishlist ms-4 d-none d-lg-block" href="wishlist.html">
                             <svg class="icon icon-wishlist" width="26" height="22" viewBox="0 0 26 22"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -359,8 +193,8 @@
                         </a>
                         <a class="header-action-item header-cart ms-4" href="#drawer-cart"
                             data-bs-toggle="offcanvas">
-                            <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
                                     fill="black" />
@@ -384,8 +218,8 @@
             <div class="container">
                 <form action="#" class="search-form d-flex align-items-center">
                     <button type="submit" class="search-submit bg-transparent pl-0 text-start">
-                        <svg class="icon icon-search" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="icon icon-search" width="20" height="20" viewBox="0 0 20 20"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M7.75 0.250183C11.8838 0.250183 15.25 3.61639 15.25 7.75018C15.25 9.54608 14.6201 11.1926 13.5625 12.4846L19.5391 18.4611L18.4609 19.5392L12.4844 13.5627C11.1924 14.6203 9.5459 15.2502 7.75 15.2502C3.61621 15.2502 0.25 11.884 0.25 7.75018C0.25 3.61639 3.61621 0.250183 7.75 0.250183ZM7.75 1.75018C4.42773 1.75018 1.75 4.42792 1.75 7.75018C1.75 11.0724 4.42773 13.7502 7.75 13.7502C11.0723 13.7502 13.75 11.0724 13.75 7.75018C13.75 4.42792 11.0723 1.75018 7.75 1.75018Z"
                                 fill="black" />
@@ -411,7 +245,8 @@
 <main id="MainContent" class="content-for-layout">
     <!-- slideshow start -->
     <div class="slideshow-section position-relative">
-        <div class="slideshow-active activate-slider" data-slick='{
+        <div class="slideshow-active activate-slider"
+            data-slick='{
             "slidesToShow": 1,
             "slidesToScroll": 1,
             "dots": true,
@@ -426,8 +261,10 @@
             ]
         }'>
             <div class="slide-item slide-item-bag position-relative">
-                <img class="slide-img d-none d-md-block" src="{{ asset('') }}assets/img/slideshow/f1.jpg" alt="slide-1">
-                <img class="slide-img d-md-none" src="{{ asset('') }}assets/img/slideshow/f1-m.jpg" alt="slide-1">
+                <img class="slide-img d-none d-md-block" src="{{ asset('') }}assets/img/slideshow/f1.jpg"
+                    alt="slide-1">
+                <img class="slide-img d-md-none" src="{{ asset('') }}assets/img/slideshow/f1-m.jpg"
+                    alt="slide-1">
                 <div class="content-absolute content-slide">
                     <div class="container height-inherit d-flex align-items-center justify-content-end">
                         <div class="content-box slide-content slide-content-1 py-4">
@@ -440,7 +277,7 @@
                                 Look for your inspiration here
                             </p>
                             <a class="btn-primary slide-btn animate__animated animate__fadeInUp"
-                                href="collection-left-sidebar.html"
+                                href="/produk"
                                 data-animation="animate__animated animate__fadeInUp">SHOP
                                 NOW</a>
                         </div>
@@ -448,8 +285,10 @@
                 </div>
             </div>
             <div class="slide-item slide-item-bag position-relative">
-                <img class="slide-img d-none d-md-block" src="{{ asset('') }}assets/img/slideshow/f2.jpg" alt="slide-2">
-                <img class="slide-img d-md-none" src="{{ asset('') }}assets/img/slideshow/f2-m.jpg" alt="slide-2">
+                <img class="slide-img d-none d-md-block" src="{{ asset('') }}assets/img/slideshow/f2.jpg"
+                    alt="slide-2">
+                <img class="slide-img d-md-none" src="{{ asset('') }}assets/img/slideshow/f2-m.jpg"
+                    alt="slide-2">
                 <div class="content-absolute content-slide">
                     <div class="container height-inherit d-flex align-items-center justify-content-end">
                         <div class="content-box slide-content slide-content-1 py-4 text-center">
@@ -462,7 +301,7 @@
                                 Look for your inspiration here
                             </p>
                             <a class="btn-primary slide-btn animate__animated animate__fadeInUp"
-                                href="collection-left-sidebar.html"
+                                href="/produk"
                                 data-animation="animate__animated animate__fadeInUp">SHOP
                                 NOW</a>
                         </div>
@@ -470,8 +309,10 @@
                 </div>
             </div>
             <div class="slide-item slide-item-bag position-relative">
-                <img class="slide-img d-none d-md-block" src="{{ asset('') }}assets/img/slideshow/f3.jpg" alt="slide-3">
-                <img class="slide-img d-md-none" src="{{ asset('') }}assets/img/slideshow/f3-m.jpg" alt="slide-3">
+                <img class="slide-img d-none d-md-block" src="{{ asset('') }}assets/img/slideshow/f3.jpg"
+                    alt="slide-3">
+                <img class="slide-img d-md-none" src="{{ asset('') }}assets/img/slideshow/f3-m.jpg"
+                    alt="slide-3">
                 <div class="content-absolute content-slide">
                     <div class="container height-inherit d-flex align-items-center justify-content-center">
                         <div class="content-box slide-content slide-content-1 py-4 text-center">
@@ -484,7 +325,7 @@
                                 Look for your inspiration here
                             </p>
                             <a class="btn-primary slide-btn animate__animated animate__fadeInUp"
-                                href="collection-left-sidebar.html"
+                                href="/produk"
                                 data-animation="animate__animated animate__fadeInUp">SHOP
                                 NOW</a>
                         </div>
@@ -505,7 +346,8 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="trusted-badge rounded p-0">
                             <div class="trusted-icon">
-                                <img class="icon-trusted" src="{{ asset('') }}assets/img/trusted/1.png" alt="icon-1">
+                                <img class="icon-trusted" src="{{ asset('') }}assets/img/trusted/1.png"
+                                    alt="icon-1">
                             </div>
                             <div class="trusted-content">
                                 <h2 class="heading_18 trusted-heading">Free Shipping & Return</h2>
@@ -517,7 +359,8 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="trusted-badge rounded p-0">
                             <div class="trusted-icon">
-                                <img class="icon-trusted" src="{{ asset('') }}assets/img/trusted/2.png" alt="icon-2">
+                                <img class="icon-trusted" src="{{ asset('') }}assets/img/trusted/2.png"
+                                    alt="icon-2">
                             </div>
                             <div class="trusted-content">
                                 <h2 class="heading_18 trusted-heading">Customer Support 24/7</h2>
@@ -529,7 +372,8 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="trusted-badge rounded p-0">
                             <div class="trusted-icon">
-                                <img class="icon-trusted" src="{{ asset('') }}assets/img/trusted/3.png" alt="icon-3">
+                                <img class="icon-trusted" src="{{ asset('') }}assets/img/trusted/3.png"
+                                    alt="icon-3">
                             </div>
                             <div class="trusted-content">
                                 <h2 class="heading_18 trusted-heading">100% Secure Payment</h2>
@@ -549,9 +393,10 @@
         <div class="collection-tab-inner mt-0">
             <div class="container">
                 <div class="grid-container-2">
-                    <a class="grid-item grid-item-1 position-relative rounded mt-0 d-flex" href="collection-left-sidebar.html"
-                        data-aos="fade-right" data-aos-duration="700">
-                        <img class="banner-img rounded" src="{{ asset('') }}assets/img/banner/f1.jpg" alt="banner-1">
+                    <a class="grid-item grid-item-1 position-relative rounded mt-0 d-flex"
+                        href="/produk" data-aos="fade-right" data-aos-duration="700">
+                        <img class="banner-img rounded" src="{{ asset('') }}assets/img/banner/f1.jpg"
+                            alt="banner-1">
                         <div class="content-absolute content-slide">
                             <div class="container height-inherit d-flex">
                                 <div class="content-box banner-content p-4">
@@ -564,9 +409,10 @@
                             </div>
                         </div>
                     </a>
-                    <a class="grid-item grid-item-2 position-relative rounded mt-0 d-flex" href="collection-left-sidebar.html"
-                        data-aos="fade-right" data-aos-duration="700">
-                        <img class="banner-img rounded" src="{{ asset('') }}assets/img/banner/f3.jpg" alt="banner-1">
+                    <a class="grid-item grid-item-2 position-relative rounded mt-0 d-flex"
+                        href="/produk" data-aos="fade-right" data-aos-duration="700">
+                        <img class="banner-img rounded" src="{{ asset('') }}assets/img/banner/f3.jpg"
+                            alt="banner-1">
                         <div class="content-absolute content-slide">
                             <div class="container height-inherit d-flex justify-content-end">
                                 <div class="content-box banner-content p-4 text-end">
@@ -579,9 +425,10 @@
                             </div>
                         </div>
                     </a>
-                    <a class="grid-item grid-item-3 position-relative rounded mt-0 d-flex" href="collection-left-sidebar.html"
-                        data-aos="fade-left" data-aos-duration="700">
-                        <img class="banner-img rounded" src="{{ asset('') }}assets/img/banner/f2.jpg" alt="banner-1">
+                    <a class="grid-item grid-item-3 position-relative rounded mt-0 d-flex"
+                        href="/produk" data-aos="fade-left" data-aos-duration="700">
+                        <img class="banner-img rounded" src="{{ asset('') }}assets/img/banner/f2.jpg"
+                            alt="banner-1">
                         <div class="content-absolute content-slide">
                             <div class="container height-inherit d-flex">
                                 <div class="content-box banner-content p-4">
@@ -611,10 +458,12 @@
                     <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700">
                         <div class="product-card">
                             <div class="product-card-img">
-                                <a class="hover-switch" href="collection-left-sidebar.html">
-                                    <img class="secondary-img" src="{{ asset('') }}assets/img/products/furniture/9.jpg"
+                                <a class="hover-switch" href="/produk">
+                                    <img class="secondary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/9.jpg"
                                         alt="product-img">
-                                    <img class="primary-img" src="{{ asset('') }}assets/img/products/furniture/1.jpg"
+                                    <img class="primary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/1.jpg"
                                         alt="product-img">
                                 </a>
 
@@ -643,8 +492,8 @@
                                     </a>
 
                                     <a href="#" class="action-card action-addtocart">
-                                        <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-cart" width="24" height="26"
+                                            viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
                                                 fill="#00234D" />
@@ -654,14 +503,14 @@
                             </div>
                             <div class="product-card-details">
                                 <ul class="color-lists list-unstyled d-flex align-items-center">
-                                    <li><a href="javascript:void(0)"
-                                            class="color-swatch swatch-black active"></a></li>
+                                    <li><a href="javascript:void(0)" class="color-swatch swatch-black active"></a>
+                                    </li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-cyan"></a></li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-purple"></a>
                                     </li>
                                 </ul>
                                 <h3 class="product-card-title">
-                                    <a href="collection-left-sidebar.html">best wood furniture</a>
+                                    <a href="/produk">best wood furniture</a>
                                 </h3>
                                 <div class="product-card-price">
                                     <span class="card-price-regular">$1529</span>
@@ -673,10 +522,12 @@
                     <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700">
                         <div class="product-card">
                             <div class="product-card-img">
-                                <a class="hover-switch" href="collection-left-sidebar.html">
-                                    <img class="secondary-img" src="{{ asset('') }}assets/img/products/furniture/10.jpg"
+                                <a class="hover-switch" href="/produk">
+                                    <img class="secondary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/10.jpg"
                                         alt="product-img">
-                                    <img class="primary-img" src="{{ asset('') }}assets/img/products/furniture/2.jpg"
+                                    <img class="primary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/2.jpg"
                                         alt="product-img">
                                 </a>
 
@@ -701,8 +552,8 @@
                                     </a>
 
                                     <a href="#" class="action-card action-addtocart">
-                                        <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-cart" width="24" height="26"
+                                            viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
                                                 fill="#00234D" />
@@ -712,14 +563,14 @@
                             </div>
                             <div class="product-card-details">
                                 <ul class="color-lists list-unstyled d-flex align-items-center">
-                                    <li><a href="javascript:void(0)"
-                                            class="color-swatch swatch-black active"></a></li>
+                                    <li><a href="javascript:void(0)" class="color-swatch swatch-black active"></a>
+                                    </li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-cyan"></a></li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-purple"></a>
                                     </li>
                                 </ul>
                                 <h3 class="product-card-title">
-                                    <a href="collection-left-sidebar.html">Vita Lounge Chair</a>
+                                    <a href="/produk">Vita Lounge Chair</a>
                                 </h3>
                                 <div class="product-card-price">
                                     <span class="card-price-regular">$1529</span>
@@ -731,10 +582,12 @@
                     <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700">
                         <div class="product-card">
                             <div class="product-card-img">
-                                <a class="hover-switch" href="collection-left-sidebar.html">
-                                    <img class="secondary-img" src="{{ asset('') }}assets/img/products/furniture/11.jpg"
+                                <a class="hover-switch" href="/produk">
+                                    <img class="secondary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/11.jpg"
                                         alt="product-img">
-                                    <img class="primary-img" src="{{ asset('') }}assets/img/products/furniture/3.jpg"
+                                    <img class="primary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/3.jpg"
                                         alt="product-img">
                                 </a>
 
@@ -763,8 +616,8 @@
                                     </a>
 
                                     <a href="#" class="action-card action-addtocart">
-                                        <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-cart" width="24" height="26"
+                                            viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
                                                 fill="#00234D" />
@@ -774,14 +627,14 @@
                             </div>
                             <div class="product-card-details">
                                 <ul class="color-lists list-unstyled d-flex align-items-center">
-                                    <li><a href="javascript:void(0)"
-                                            class="color-swatch swatch-black active"></a></li>
+                                    <li><a href="javascript:void(0)" class="color-swatch swatch-black active"></a>
+                                    </li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-cyan"></a></li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-purple"></a>
                                     </li>
                                 </ul>
                                 <h3 class="product-card-title">
-                                    <a href="collection-left-sidebar.html">Sarno Dining Chair</a>
+                                    <a href="/produk">Sarno Dining Chair</a>
                                 </h3>
                                 <div class="product-card-price">
                                     <span class="card-price-regular">$1529</span>
@@ -793,10 +646,12 @@
                     <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700">
                         <div class="product-card">
                             <div class="product-card-img">
-                                <a class="hover-switch" href="collection-left-sidebar.html">
-                                    <img class="secondary-img" src="{{ asset('') }}assets/img/products/furniture/14.jpg"
+                                <a class="hover-switch" href="/produk">
+                                    <img class="secondary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/14.jpg"
                                         alt="product-img">
-                                    <img class="primary-img" src="{{ asset('') }}assets/img/products/furniture/4.jpg"
+                                    <img class="primary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/4.jpg"
                                         alt="product-img">
                                 </a>
 
@@ -821,8 +676,8 @@
                                     </a>
 
                                     <a href="#" class="action-card action-addtocart">
-                                        <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-cart" width="24" height="26"
+                                            viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
                                                 fill="#00234D" />
@@ -832,14 +687,14 @@
                             </div>
                             <div class="product-card-details">
                                 <ul class="color-lists list-unstyled d-flex align-items-center">
-                                    <li><a href="javascript:void(0)"
-                                            class="color-swatch swatch-black active"></a></li>
+                                    <li><a href="javascript:void(0)" class="color-swatch swatch-black active"></a>
+                                    </li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-cyan"></a></li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-purple"></a>
                                     </li>
                                 </ul>
                                 <h3 class="product-card-title">
-                                    <a href="collection-left-sidebar.html">bisum tea table</a>
+                                    <a href="/produk">bisum tea table</a>
                                 </h3>
                                 <div class="product-card-price">
                                     <span class="card-price-regular">$1529</span>
@@ -851,10 +706,12 @@
                     <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700">
                         <div class="product-card">
                             <div class="product-card-img">
-                                <a class="hover-switch" href="collection-left-sidebar.html">
-                                    <img class="secondary-img" src="{{ asset('') }}assets/img/products/furniture/15.jpg"
+                                <a class="hover-switch" href="/produk">
+                                    <img class="secondary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/15.jpg"
                                         alt="product-img">
-                                    <img class="primary-img" src="{{ asset('') }}assets/img/products/furniture/5.jpg"
+                                    <img class="primary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/5.jpg"
                                         alt="product-img">
                                 </a>
 
@@ -879,8 +736,8 @@
                                     </a>
 
                                     <a href="#" class="action-card action-addtocart">
-                                        <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-cart" width="24" height="26"
+                                            viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
                                                 fill="#00234D" />
@@ -890,14 +747,14 @@
                             </div>
                             <div class="product-card-details">
                                 <ul class="color-lists list-unstyled d-flex align-items-center">
-                                    <li><a href="javascript:void(0)"
-                                            class="color-swatch swatch-black active"></a></li>
+                                    <li><a href="javascript:void(0)" class="color-swatch swatch-black active"></a>
+                                    </li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-cyan"></a></li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-purple"></a>
                                     </li>
                                 </ul>
                                 <h3 class="product-card-title">
-                                    <a href="collection-left-sidebar.html">Eliot Reversible tool</a>
+                                    <a href="/produk">Eliot Reversible tool</a>
                                 </h3>
                                 <div class="product-card-price">
                                     <span class="card-price-regular">$1529</span>
@@ -909,10 +766,12 @@
                     <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700">
                         <div class="product-card">
                             <div class="product-card-img">
-                                <a class="hover-switch" href="collection-left-sidebar.html">
-                                    <img class="secondary-img" src="{{ asset('') }}assets/img/products/furniture/16.jpg"
+                                <a class="hover-switch" href="/produk">
+                                    <img class="secondary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/16.jpg"
                                         alt="product-img">
-                                    <img class="primary-img" src="{{ asset('') }}assets/img/products/furniture/6.jpg"
+                                    <img class="primary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/6.jpg"
                                         alt="product-img">
                                 </a>
 
@@ -937,8 +796,8 @@
                                     </a>
 
                                     <a href="#" class="action-card action-addtocart">
-                                        <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-cart" width="24" height="26"
+                                            viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
                                                 fill="#00234D" />
@@ -948,14 +807,14 @@
                             </div>
                             <div class="product-card-details">
                                 <ul class="color-lists list-unstyled d-flex align-items-center">
-                                    <li><a href="javascript:void(0)"
-                                            class="color-swatch swatch-black active"></a></li>
+                                    <li><a href="javascript:void(0)" class="color-swatch swatch-black active"></a>
+                                    </li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-cyan"></a></li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-purple"></a>
                                     </li>
                                 </ul>
                                 <h3 class="product-card-title">
-                                    <a href="collection-left-sidebar.html">Vita Lounge wardrobe</a>
+                                    <a href="/produk">Vita Lounge wardrobe</a>
                                 </h3>
                                 <div class="product-card-price">
                                     <span class="card-price-regular">$1529</span>
@@ -967,10 +826,12 @@
                     <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700">
                         <div class="product-card">
                             <div class="product-card-img">
-                                <a class="hover-switch" href="collection-left-sidebar.html">
-                                    <img class="secondary-img" src="{{ asset('') }}assets/img/products/furniture/17.jpg"
+                                <a class="hover-switch" href="/produk">
+                                    <img class="secondary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/17.jpg"
                                         alt="product-img">
-                                    <img class="primary-img" src="{{ asset('') }}assets/img/products/furniture/7.jpg"
+                                    <img class="primary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/7.jpg"
                                         alt="product-img">
                                 </a>
 
@@ -995,8 +856,8 @@
                                     </a>
 
                                     <a href="#" class="action-card action-addtocart">
-                                        <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-cart" width="24" height="26"
+                                            viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
                                                 fill="#00234D" />
@@ -1006,14 +867,14 @@
                             </div>
                             <div class="product-card-details">
                                 <ul class="color-lists list-unstyled d-flex align-items-center">
-                                    <li><a href="javascript:void(0)"
-                                            class="color-swatch swatch-black active"></a></li>
+                                    <li><a href="javascript:void(0)" class="color-swatch swatch-black active"></a>
+                                    </li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-cyan"></a></li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-purple"></a>
                                     </li>
                                 </ul>
                                 <h3 class="product-card-title">
-                                    <a href="collection-left-sidebar.html">Sarno Dining Chair</a>
+                                    <a href="/produk">Sarno Dining Chair</a>
                                 </h3>
                                 <div class="product-card-price">
                                     <span class="card-price-regular">$1529</span>
@@ -1025,10 +886,12 @@
                     <div class="col-lg-3 col-md-6 col-6" data-aos="fade-up" data-aos-duration="700">
                         <div class="product-card">
                             <div class="product-card-img">
-                                <a class="hover-switch" href="collection-left-sidebar.html">
-                                    <img class="secondary-img" src="{{ asset('') }}assets/img/products/furniture/19.jpg"
+                                <a class="hover-switch" href="/produk">
+                                    <img class="secondary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/19.jpg"
                                         alt="product-img">
-                                    <img class="primary-img" src="{{ asset('') }}assets/img/products/furniture/8.jpg"
+                                    <img class="primary-img"
+                                        src="{{ asset('') }}assets/img/products/furniture/8.jpg"
                                         alt="product-img">
                                 </a>
 
@@ -1053,8 +916,8 @@
                                     </a>
 
                                     <a href="#" class="action-card action-addtocart">
-                                        <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="icon icon-cart" width="24" height="26"
+                                            viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
                                                 fill="#00234D" />
@@ -1064,14 +927,14 @@
                             </div>
                             <div class="product-card-details">
                                 <ul class="color-lists list-unstyled d-flex align-items-center">
-                                    <li><a href="javascript:void(0)"
-                                            class="color-swatch swatch-black active"></a></li>
+                                    <li><a href="javascript:void(0)" class="color-swatch swatch-black active"></a>
+                                    </li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-cyan"></a></li>
                                     <li><a href="javascript:void(0)" class="color-swatch swatch-purple"></a>
                                     </li>
                                 </ul>
                                 <h3 class="product-card-title">
-                                    <a href="collection-left-sidebar.html">Vita Lounge Chair</a>
+                                    <a href="/produk">Vita Lounge Chair</a>
                                 </h3>
                                 <div class="product-card-price">
                                     <span class="card-price-regular">$1529</span>
@@ -1100,11 +963,12 @@
                     <div class="scattered-item" data-aos="fade-left" data-aos-duration="700">
                         <div class="scattered-wrapper">
                             <div class="scattered-content">
-                                <img class="scattered-img" src="{{ asset('') }}assets/img/banner/f4.jpg" alt="img">
+                                <img class="scattered-img" src="{{ asset('') }}assets/img/banner/f4.jpg"
+                                    alt="img">
                             </div>
                             <div class="scattered-details">
                                 <h2 class="scattered-heading primary-color">Home Decor</h2>
-                                <a href="collection-left-sidebar.html"
+                                <a href="/produk"
                                     class="text_12 link-underline d-block primary-color mt-2">
                                     SHOP COLLECTION
                                 </a>
@@ -1114,7 +978,8 @@
                     <div class="scattered-item" data-aos="fade-right" data-aos-duration="700">
                         <div class="scattered-wrapper">
                             <div class="scattered-content">
-                                <img class="scattered-img" src="{{ asset('') }}assets/img/banner/f5.jpg" alt="img">
+                                <img class="scattered-img" src="{{ asset('') }}assets/img/banner/f5.jpg"
+                                    alt="img">
                             </div>
                             <div class="scattered-details">
                                 <h2 class="scattered-heading primary-color">Storage Furniture</h2>
@@ -1127,7 +992,8 @@
                     <div class="scattered-item" data-aos="fade-left" data-aos-duration="700">
                         <div class="scattered-wrapper">
                             <div class="scattered-content">
-                                <img class="scattered-img" src="{{ asset('') }}assets/img/banner/f6.jpg" alt="img">
+                                <img class="scattered-img" src="{{ asset('') }}assets/img/banner/f6.jpg"
+                                    alt="img">
                             </div>
                             <div class="scattered-details">
                                 <h2 class="scattered-heading primary-color">Black Cusion Chair</h2>
@@ -1176,7 +1042,8 @@
                     </div>
                     <div class="modal-body">
                         <iframe height="600" src="https://www.youtube.com/embed/tvPnrfQCiCo"
-                            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -1199,10 +1066,10 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-6 offset-lg-1 col-md-12 col-12" data-aos="fade-left"
-                        data-aos-duration="700">
+                    <div class="col-lg-6 offset-lg-1 col-md-12 col-12" data-aos="fade-left" data-aos-duration="700">
                         <div class="testimonial-container position-relative">
-                            <div class="testimonial-slideshow common-slider" data-slick='{
+                            <div class="testimonial-slideshow common-slider"
+                                data-slick='{
                                     "slidesToShow": 1,
                                     "slidesToScroll": 1,
                                     "dots": false,
@@ -1234,7 +1101,8 @@
                                     </p>
                                     <div class="testimonial-reviewer d-flex align-items-center">
                                         <div class="reviewer-img">
-                                            <img src="{{ asset('') }}assets/img/testimonial/john.jpg" alt="img">
+                                            <img src="{{ asset('') }}assets/img/testimonial/john.jpg"
+                                                alt="img">
                                         </div>
                                         <div class="reviewer-info ms-4">
                                             <h4 class="reviewer-name heading_18 mb-2 primary-color">Floyd Miles
@@ -1269,7 +1137,8 @@
                                     </p>
                                     <div class="testimonial-reviewer d-flex align-items-center">
                                         <div class="reviewer-img">
-                                            <img src="{{ asset('') }}assets/img/testimonial/john.jpg" alt="img">
+                                            <img src="{{ asset('') }}assets/img/testimonial/john.jpg"
+                                                alt="img">
                                         </div>
                                         <div class="reviewer-info ms-4">
                                             <h4 class="reviewer-name heading_18 mb-2 primary-color">Floyd Miles
@@ -1304,7 +1173,8 @@
                                     </p>
                                     <div class="testimonial-reviewer d-flex align-items-center">
                                         <div class="reviewer-img">
-                                            <img src="{{ asset('') }}assets/img/testimonial/john.jpg" alt="img">
+                                            <img src="{{ asset('') }}assets/img/testimonial/john.jpg"
+                                                alt="img">
                                         </div>
                                         <div class="reviewer-info ms-4">
                                             <h4 class="reviewer-name heading_18 mb-2 primary-color">Floyd Miles
@@ -1326,7 +1196,8 @@
     <!-- single banner start -->
     <div class="single-banner-section mt-100 overflow-hidden">
         <div class="position-relative overlay">
-            <img class="single-banner-img" src="{{ asset('') }}assets/img/banner/single-banner-2.jpg" alt="slide-1">
+            <img class="single-banner-img" src="{{ asset('') }}assets/img/banner/single-banner-2.jpg"
+                alt="slide-1">
 
             <div class="content-absolute content-slide">
                 <div class="container height-inherit d-flex align-items-center justify-content-center">
@@ -1343,9 +1214,8 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                         </p>
                         <a class="btn-primary single-banner-btn animate__animated animate__fadeInUp"
-                            href="collection-left-sidebar.html"
-                            data-animation="animate__animated animate__fadeInUp" data-aos="fade-up"
-                            data-aos-duration="700">
+                            href="/produk" data-animation="animate__animated animate__fadeInUp"
+                            data-aos="fade-up" data-aos-duration="700">
                             DISCOVER NOW
                         </a>
                     </div>
@@ -1363,7 +1233,8 @@
                     <h2 class="section-heading primary-color">Latest blogs</h2>
                 </div>
                 <div class="article-card-container position-relative">
-                    <div class="common-slider" data-slick='{
+                    <div class="common-slider"
+                        data-slick='{
                         "slidesToShow": 3,
                         "slidesToScroll": 1,
                         "dots": false,
@@ -1395,8 +1266,8 @@
                                 <p class="article-card-published text_12 d-flex align-items-center">
                                     <span class="article-date d-flex align-items-center">
                                         <span class="icon-publish">
-                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="17" height="18" viewBox="0 0 17 18"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M3.46875 0.875V1.59375H0.59375V17.4063H16.4063V1.59375H13.5313V0.875H12.0938V1.59375H4.90625V0.875H3.46875ZM2.03125 3.03125H3.46875V3.75H4.90625V3.03125H12.0938V3.75H13.5313V3.03125H14.9688V4.46875H2.03125V3.03125ZM2.03125 5.90625H14.9688V15.9688H2.03125V5.90625ZM6.34375 7.34375V8.78125H7.78125V7.34375H6.34375ZM9.21875 7.34375V8.78125H10.6563V7.34375H9.21875ZM12.0938 7.34375V8.78125H13.5313V7.34375H12.0938ZM3.46875 10.2188V11.6563H4.90625V10.2188H3.46875ZM6.34375 10.2188V11.6563H7.78125V10.2188H6.34375ZM9.21875 10.2188V11.6563H10.6563V10.2188H9.21875ZM12.0938 10.2188V11.6563H13.5313V10.2188H12.0938ZM3.46875 13.0938V14.5313H4.90625V13.0938H3.46875ZM6.34375 13.0938V14.5313H7.78125V13.0938H6.34375ZM9.21875 13.0938V14.5313H10.6563V13.0938H9.21875Z"
                                                     fill="#00234D" />
@@ -1433,8 +1304,8 @@
                                 <p class="article-card-published text_12 d-flex align-items-center">
                                     <span class="article-date d-flex align-items-center">
                                         <span class="icon-publish">
-                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="17" height="18" viewBox="0 0 17 18"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M3.46875 0.875V1.59375H0.59375V17.4063H16.4063V1.59375H13.5313V0.875H12.0938V1.59375H4.90625V0.875H3.46875ZM2.03125 3.03125H3.46875V3.75H4.90625V3.03125H12.0938V3.75H13.5313V3.03125H14.9688V4.46875H2.03125V3.03125ZM2.03125 5.90625H14.9688V15.9688H2.03125V5.90625ZM6.34375 7.34375V8.78125H7.78125V7.34375H6.34375ZM9.21875 7.34375V8.78125H10.6563V7.34375H9.21875ZM12.0938 7.34375V8.78125H13.5313V7.34375H12.0938ZM3.46875 10.2188V11.6563H4.90625V10.2188H3.46875ZM6.34375 10.2188V11.6563H7.78125V10.2188H6.34375ZM9.21875 10.2188V11.6563H10.6563V10.2188H9.21875ZM12.0938 10.2188V11.6563H13.5313V10.2188H12.0938ZM3.46875 13.0938V14.5313H4.90625V13.0938H3.46875ZM6.34375 13.0938V14.5313H7.78125V13.0938H6.34375ZM9.21875 13.0938V14.5313H10.6563V13.0938H9.21875Z"
                                                     fill="#00234D" />
@@ -1471,8 +1342,8 @@
                                 <p class="article-card-published text_12 d-flex align-items-center">
                                     <span class="article-date d-flex align-items-center">
                                         <span class="icon-publish">
-                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="17" height="18" viewBox="0 0 17 18"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M3.46875 0.875V1.59375H0.59375V17.4063H16.4063V1.59375H13.5313V0.875H12.0938V1.59375H4.90625V0.875H3.46875ZM2.03125 3.03125H3.46875V3.75H4.90625V3.03125H12.0938V3.75H13.5313V3.03125H14.9688V4.46875H2.03125V3.03125ZM2.03125 5.90625H14.9688V15.9688H2.03125V5.90625ZM6.34375 7.34375V8.78125H7.78125V7.34375H6.34375ZM9.21875 7.34375V8.78125H10.6563V7.34375H9.21875ZM12.0938 7.34375V8.78125H13.5313V7.34375H12.0938ZM3.46875 10.2188V11.6563H4.90625V10.2188H3.46875ZM6.34375 10.2188V11.6563H7.78125V10.2188H6.34375ZM9.21875 10.2188V11.6563H10.6563V10.2188H9.21875ZM12.0938 10.2188V11.6563H13.5313V10.2188H12.0938ZM3.46875 13.0938V14.5313H4.90625V13.0938H3.46875ZM6.34375 13.0938V14.5313H7.78125V13.0938H6.34375ZM9.21875 13.0938V14.5313H10.6563V13.0938H9.21875Z"
                                                     fill="#00234D" />
@@ -1509,8 +1380,8 @@
                                 <p class="article-card-published text_12 d-flex align-items-center">
                                     <span class="article-date d-flex align-items-center">
                                         <span class="icon-publish">
-                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="17" height="18" viewBox="0 0 17 18"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="M3.46875 0.875V1.59375H0.59375V17.4063H16.4063V1.59375H13.5313V0.875H12.0938V1.59375H4.90625V0.875H3.46875ZM2.03125 3.03125H3.46875V3.75H4.90625V3.03125H12.0938V3.75H13.5313V3.03125H14.9688V4.46875H2.03125V3.03125ZM2.03125 5.90625H14.9688V15.9688H2.03125V5.90625ZM6.34375 7.34375V8.78125H7.78125V7.34375H6.34375ZM9.21875 7.34375V8.78125H10.6563V7.34375H9.21875ZM12.0938 7.34375V8.78125H13.5313V7.34375H12.0938ZM3.46875 10.2188V11.6563H4.90625V10.2188H3.46875ZM6.34375 10.2188V11.6563H7.78125V10.2188H6.34375ZM9.21875 10.2188V11.6563H10.6563V10.2188H9.21875ZM12.0938 10.2188V11.6563H13.5313V10.2188H12.0938ZM3.46875 13.0938V14.5313H4.90625V13.0938H3.46875ZM6.34375 13.0938V14.5313H7.78125V13.0938H6.34375ZM9.21875 13.0938V14.5313H10.6563V13.0938H9.21875Z"
                                                     fill="#00234D" />
@@ -1553,37 +1424,43 @@
                     <div class="scroll-horizontal row align-items-center flex-nowrap">
                         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up"
                             data-aos-duration="700">
-                            <a href="index.html" class="brand-logo d-flex align-items-center justify-content-center">
+                            <a href="index.html"
+                                class="brand-logo d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('') }}assets/img/brand/1.png" alt="img">
                             </a>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up"
                             data-aos-duration="700">
-                            <a href="index.html" class="brand-logo d-flex align-items-center justify-content-center">
+                            <a href="index.html"
+                                class="brand-logo d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('') }}assets/img/brand/2.png" alt="img">
                             </a>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up"
                             data-aos-duration="700">
-                            <a href="index.html" class="brand-logo d-flex align-items-center justify-content-center">
+                            <a href="index.html"
+                                class="brand-logo d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('') }}assets/img/brand/3.png" alt="img">
                             </a>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up"
                             data-aos-duration="700">
-                            <a href="index.html" class="brand-logo d-flex align-items-center justify-content-center">
+                            <a href="index.html"
+                                class="brand-logo d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('') }}assets/img/brand/4.png" alt="img">
                             </a>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up"
                             data-aos-duration="700">
-                            <a href="index.html" class="brand-logo d-flex align-items-center justify-content-center">
+                            <a href="index.html"
+                                class="brand-logo d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('') }}assets/img/brand/5.png" alt="img">
                             </a>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up"
                             data-aos-duration="700">
-                            <a href="index.html" class="brand-logo d-flex align-items-center justify-content-center">
+                            <a href="index.html"
+                                class="brand-logo d-flex align-items-center justify-content-center">
                                 <img src="{{ asset('') }}assets/img/brand/6.png" alt="img">
                             </a>
                         </div>

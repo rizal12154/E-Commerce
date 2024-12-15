@@ -108,7 +108,7 @@
                                     </a>
                                 </div>
                             </li>
-                            <li class="menu-list-item nav-item has-dropdown active">
+                            <li class="menu-list-item nav-item has-megamenu">
                                 <div class="mega-menu-header">
                                     <a class="nav-link" href="/produk">
                                         Shop
