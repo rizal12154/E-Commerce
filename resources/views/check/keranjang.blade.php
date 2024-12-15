@@ -1,8 +1,8 @@
-@extends('layouts.produk')
+@include('layouts.style')
+
+@include('layouts.produk_header')
 
 @section('title', 'Keranjang')
-
-@section('Default content')
     <!-- breadcrumb start -->
     <div class="breadcrumb">
         <div class="container">
@@ -172,7 +172,7 @@
                                         </div>
                                         <p class="shipping_text">Shipping & taxes calculated at checkout</p>
                                         <div class="d-flex justify-content-center mt-4">
-                                            <a href="/check/checkout"
+                                            <a href="/checkout"
                                                 class="position-relative btn-primary text-uppercase">
                                                 Procced to checkout
                                             </a>
@@ -185,4 +185,3 @@
             </div>
         </div>
     </main>
-@endsection

@@ -1,8 +1,6 @@
 @extends('layouts.produk')
 
 @section('title', 'Cek Out')
-
-@section('Default content')
     <!-- breadcrumb start -->
     <div class="breadcrumb">
         <div class="container">
@@ -253,4 +251,3 @@
             </div>
         </div>
     </main>
-@endsection
