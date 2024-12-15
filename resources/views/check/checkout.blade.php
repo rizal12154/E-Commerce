@@ -1,4 +1,6 @@
-@extends('layouts.produk')
+@include('layouts.style')
+
+@include('layouts.produk_header')
 
 @section('title', 'Cek Out')
     <!-- breadcrumb start -->
@@ -251,3 +253,7 @@
             </div>
         </div>
     </main>
+
+@include('layouts.produk_footer')
+
+@include('layouts.script')

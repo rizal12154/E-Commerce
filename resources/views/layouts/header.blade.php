@@ -140,16 +140,16 @@
                                     <a class="nav-link" href="/produk">
                                         Shop
                                     </a>
-                                    <span class="open-submenu">
+                                    {{-- <span class="open-submenu">
                                         <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
                                             width="24" height="24" viewBox="0 0 24 24" fill="none"
                                             stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                             stroke-linejoin="round">
                                             <polyline points="6 9 12 15 18 9"></polyline>
                                         </svg>
-                                    </span>
+                                    </span> --}}
                                 </div>
-                                <div class="submenu-transform submenu-transform-desktop">
+                                {{-- <div class="submenu-transform submenu-transform-desktop">
                                     <div class="container">
                                         <ul class="submenu megamenu-container list-unstyled">
                                             <li class="menu-list-item nav-item-sub">
@@ -280,31 +280,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="menu-list-item nav-item has-dropdown">
-                                <div class="mega-menu-header">
-                                    <a class="nav-link" href="blog.html">Blog</a>
-                                    <span class="open-submenu">
-                                        <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="submenu-transform submenu-transform-desktop">
-                                    <ul class="submenu list-unstyled">
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="blog.html">Blog</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="article.html">Blog
-                                                Details</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                </div> --}}
                             </li>
                             <li class="menu-list-item nav-item has-dropdown">
                                 <div class="mega-menu-header">

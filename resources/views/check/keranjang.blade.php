@@ -185,3 +185,9 @@
             </div>
         </div>
     </main>
+
+    {{-- Footer --}}
+@include('layouts.produk_footer')
+
+    {{-- Script --}}
+@include('layouts.script')
