@@ -1,22 +1,24 @@
+@include('layouts.style')
+
 <div class="announcement-bar bg-1 py-1 py-lg-2">
     <div class="container">
         <div class="row align-items-center justify-content-between">
             <div class="col-lg-3 d-lg-block d-none">
                 <div class="announcement-call-wrapper">
                     <div class="announcement-call">
-                        <a class="announcement-text text-white" href="tel:+1-078-2376">Call: +1 078 2376</a>
+                        <a class="announcement-text text-white" href="tel:+1-078-2376">Call: +62852312863066</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-12">
                 <div class="announcement-text-wrapper d-flex align-items-center justify-content-center">
-                    <p class="announcement-text text-white">New year sale - 30% off</p>
+                    <p class="announcement-text text-white">Diskon Tahun Baru</p>
                 </div>
             </div>
             <div class="col-lg-3 d-lg-block d-none">
                 <div class="announcement-meta-wrapper d-flex align-items-center justify-content-end">
                     <div class="announcement-meta d-flex align-items-center">
-                        <a class="announcement-login announcement-text text-white" href="login.html">
+                        <a class="announcement-login announcement-text text-white" href="/eror">
                             <svg class="icon icon-user" width="10" height="11" viewBox="0 0 10 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -116,7 +118,9 @@
                                 </div>
                             </li>
                             <li class="menu-list-item nav-item">
-                                <a class="nav-link" href="/contact">Contact</a>
+                                <a class="nav-link" href="/contact">
+                                    Contact
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -131,7 +135,7 @@
                                     fill="black" />
                             </svg>
                         </a>
-                        <a class="header-action-item header-wishlist ms-4 d-none d-lg-block" href="wishlist.html">
+                        <a class="header-action-item header-wishlist ms-4 d-none d-lg-block" href="/whitelist">
                             <svg class="icon icon-wishlist" width="26" height="22" viewBox="0 0 26 22"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -189,3 +193,5 @@
         </div>
     </div>
 </header>
+
+@include('layouts.script')

@@ -20,8 +20,6 @@
         <!-- scrollup start -->
         <button id="scrollup">
             @yield('content')
-        </div>
-        <!-- newsletter subscribe modal end -->
 
         @include('layouts.script')
     </div>

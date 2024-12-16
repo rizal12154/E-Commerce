@@ -16,11 +16,10 @@
                                 </span>
                             </h4>
                             <ul class="footer-menu list-unstyled mb-0 d-md-block">
-                                <li class="footer-menu-item"><a href="about-us.html">About us</a></li>
-                                <li class="footer-menu-item"><a href="about-us.html">Press center</a></li>
-                                <li class="footer-menu-item"><a href="blog.html">Our magazine</a></li>
-                                <li class="footer-menu-item"><a href="about-us.html">Our group</a></li>
-                                <li class="footer-menu-item"><a href="about-us.html">Work with us</a></li>
+                                <li class="footer-menu-item"><a href="/about">About us</a></li>
+                                <li class="footer-menu-item"><a href="/about">Press center</a></li>
+                                <li class="footer-menu-item"><a href="/about">Our group</a></li>
+                                <li class="footer-menu-item"><a href="/about">Work with us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -37,11 +36,11 @@
                                 </span>
                             </h4>
                             <ul class="footer-menu list-unstyled mb-0 d-md-block">
-                                <li class="footer-menu-item"><a href="about-us.html">Brand catalog</a></li>
-                                <li class="footer-menu-item"><a href="about-us.html">Discount codes</a></li>
-                                <li class="footer-menu-item"><a href="collection-left-sidebar.html">Furniture</a></li>
-                                <li class="footer-menu-item"><a href="collection-left-sidebar.html">Sofa</a></li>
-                                <li class="footer-menu-item"><a href="collection-left-sidebar.html">Chair</a></li>
+                                <li class="footer-menu-item"><a href="/about">Brand catalog</a></li>
+                                <li class="footer-menu-item"><a href="/about">Discount codes</a></li>
+                                <li class="footer-menu-item"><a href="/produk">Furniture</a></li>
+                                <li class="footer-menu-item"><a href="/produk">Sofa</a></li>
+                                <li class="footer-menu-item"><a href="/produk">Chair</a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,10 +57,9 @@
                                 </span>
                             </h4>
                             <ul class="footer-menu list-unstyled mb-0 d-md-block">
-                                <li class="footer-menu-item"><a href="faq.html">Chair</a></li>
-                                <li class="footer-menu-item"><a href="about-us.html">Privacy policy</a></li>
-                                <li class="footer-menu-item"><a href="about-us.html">Support</a></li>
-                                <li class="footer-menu-item"><a href="contact.html">Contact</a></li>
+                                <li class="footer-menu-item"><a href="/about">Privacy policy</a></li>
+                                <li class="footer-menu-item"><a href="/about">Support</a></li>
+                                <li class="footer-menu-item"><a href="/contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -118,17 +116,6 @@
                                         </li>
                                         <li class="footer-social-item">
                                             <a href="#">
-                                                <svg class="icon icon-tiktok" width="20" height="20"
-                                                    viewBox="0 0 20 20" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                                        d="M13.2367 1C13.5336 3.55445 14.9591 5.0774 17.4375 5.23942V8.11251C16.0012 8.25292 14.7431 7.78307 13.2799 6.89739V12.2709C13.2799 19.0972 5.8393 21.2304 2.84795 16.3375C0.925716 13.189 2.10282 7.66426 8.26909 7.44284V10.4725C7.79933 10.5481 7.29717 10.667 6.83821 10.8236C5.46673 11.288 4.68919 12.1575 4.90518 13.6913C5.32094 16.6292 10.7097 17.4986 10.2615 11.7579V1.0054H13.2367V1Z"
-                                                        fill="#FEFEFE" />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="footer-social-item">
-                                            <a href="#">
                                                 <svg class="icon icon-youtube" width="20" height="20"
                                                     viewBox="0 0 20 20" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -152,8 +139,8 @@
             <div
                 class="footer-bottom-inner d-flex flex-wrap justify-content-md-between justify-content-center align-items-center">
                 <ul class="footer-bottom-menu list-unstyled d-flex flex-wrap align-items-center mb-0">
-                    <li class="footer-menu-item"><a href="about-us.html">Privacy policy</a></li>
-                    <li class="footer-menu-item"><a href="about-us.html">Terms & Conditions</a></li>
+                    <li class="footer-menu-item"><a href="/about">Privacy policy</a></li>
+                    <li class="footer-menu-item"><a href="/about">Terms & Conditions</a></li>
                 </ul>
                 <p class="copyright footer-text">©<span class="current-year"></span> Spree Themes.</p>
             </div>

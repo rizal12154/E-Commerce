@@ -1,3 +1,5 @@
+@include('layouts.style')
+
 <!-- announcement bar start -->
 <div class="announcement-bar bg-1 py-1 py-lg-2">
     <div class="container">
@@ -120,53 +122,6 @@
                                     </a>
                                 </div>
                             </li>
-                            {{-- <li class="menu-list-item nav-item has-dropdown">
-                                <div class="mega-menu-header">
-                                    <a class="nav-link" href="about-us.html">
-                                        Pages
-                                    </a>
-                                    <span class="open-submenu">
-                                        <svg class="icon icon-dropdown" xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <polyline points="6 9 12 15 18 9"></polyline>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="submenu-transform submenu-transform-desktop">
-                                    <ul class="submenu list-unstyled">
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="about-us.html">About
-                                                Us</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="contact.html">Contact</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="faq.html">FAQ</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="404.html">404 page</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="login.html">Login</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="register.html">Register</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="wishlist.html">Wishlist</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="cart.html">Cart</a>
-                                        </li>
-                                        <li class="menu-list-item nav-item-sub">
-                                            <a class="nav-link-sub nav-text-sub" href="checkout.html">Checkout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li> --}}
                             <li class="menu-list-item nav-item">
                                 <a class="nav-link" href="/contact">Contact</a>
                             </li>
@@ -183,7 +138,7 @@
                                     fill="black" />
                             </svg>
                         </a>
-                        <a class="header-action-item header-wishlist ms-4 d-none d-lg-block" href="wishlist.html">
+                        <a class="header-action-item header-wishlist ms-4 d-none d-lg-block" href="/whitelist">
                             <svg class="icon icon-wishlist" width="26" height="22" viewBox="0 0 26 22"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -191,15 +146,15 @@
                                     fill="black" />
                             </svg>
                         </a>
-                        <a class="header-action-item header-cart ms-4" href="#drawer-cart"
-                            data-bs-toggle="offcanvas">
-                            <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
-                                    fill="black" />
-                            </svg>
-                        </a>
+                                <a class="header-action-item header-cart ms-4" href="#drawer-cart"
+                                    data-bs-toggle="offcanvas">
+                                    <svg class="icon icon-cart" width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 0.000183105C9.25391 0.000183105 7 2.25409 7 5.00018V6.00018H2.0625L2 6.93768L1 24.9377L0.9375 26.0002H23.0625L23 24.9377L22 6.93768L21.9375 6.00018H17V5.00018C17 2.25409 14.7461 0.000183105 12 0.000183105ZM12 2.00018C13.6562 2.00018 15 3.34393 15 5.00018V6.00018H9V5.00018C9 3.34393 10.3438 2.00018 12 2.00018ZM3.9375 8.00018H7V11.0002H9V8.00018H15V11.0002H17V8.00018H20.0625L20.9375 24.0002H3.0625L3.9375 8.00018Z"
+                                            fill="black" />
+                                    </svg>
+                                </a>
                         <a class="header-action-item header-hamburger ms-4 d-lg-none" href="#drawer-menu"
                             data-bs-toggle="offcanvas">
                             <svg class="icon icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -1037,3 +992,5 @@
     </div>
     <!-- single banner end -->
 </main>
+
+@include('layouts.script')
