@@ -35,11 +35,13 @@
                                             <li><a href="#" class="text_14">Date, new to old</a></li>
                                         </ul>
                                     </div>
-                                    <div class="filter-drawer-trigger mobile-filter d-flex align-items-center d-lg-none">
+                                    <div
+                                        class="filter-drawer-trigger mobile-filter d-flex align-items-center d-lg-none">
                                         <span class="mobile-filter-icon me-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="icon icon-filter">
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-filter">
                                                 <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
                                             </svg>
                                         </span>
@@ -67,8 +69,8 @@
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -131,8 +133,8 @@
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -199,8 +201,8 @@
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -263,8 +265,8 @@
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -327,8 +329,8 @@
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -391,8 +393,8 @@
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -455,8 +457,8 @@
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -519,8 +521,8 @@
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -583,8 +585,8 @@
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -639,16 +641,16 @@
                                                 <a class="hover-switch" href="collection-left-sidebar.html">
                                                     <img class="secondary-img"
                                                         src="assets/img/products/furniture/21.jpg" alt="product-img">
-                                                    <img class="primary-img" src="assets/img/products/furniture/27.jpg"
-                                                        alt="product-img">
+                                                    <img class="primary-img"
+                                                        src="assets/img/products/furniture/27.jpg" alt="product-img">
                                                 </a>
 
                                                 <div
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -703,16 +705,16 @@
                                                 <a class="hover-switch" href="collection-left-sidebar.html">
                                                     <img class="secondary-img"
                                                         src="assets/img/products/furniture/22.jpg" alt="product-img">
-                                                    <img class="primary-img" src="assets/img/products/furniture/28.jpg"
-                                                        alt="product-img">
+                                                    <img class="primary-img"
+                                                        src="assets/img/products/furniture/28.jpg" alt="product-img">
                                                 </a>
 
                                                 <div
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -767,16 +769,16 @@
                                                 <a class="hover-switch" href="collection-left-sidebar.html">
                                                     <img class="secondary-img"
                                                         src="assets/img/products/furniture/29.jpg" alt="product-img">
-                                                    <img class="primary-img" src="assets/img/products/furniture/23.jpg"
-                                                        alt="product-img">
+                                                    <img class="primary-img"
+                                                        src="assets/img/products/furniture/23.jpg" alt="product-img">
                                                 </a>
 
                                                 <div
                                                     class="product-card-action product-card-action-2 justify-content-center">
                                                     <a href="#quickview-modal" class="action-card action-quickview"
                                                         data-bs-toggle="modal">
-                                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="26" height="26" viewBox="0 0 26 26"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path
                                                                 d="M10 0C15.5117 0 20 4.48828 20 10C20 12.3945 19.1602 14.5898 17.75 16.3125L25.7188 24.2812L24.2812 25.7188L16.3125 17.75C14.5898 19.1602 12.3945 20 10 20C4.48828 20 0 15.5117 0 10C0 4.48828 4.48828 0 10 0ZM10 2C5.57031 2 2 5.57031 2 10C2 14.4297 5.57031 18 10 18C14.4297 18 18 14.4297 18 10C18 5.57031 14.4297 2 10 2ZM11 6V9H14V11H11V14H9V11H6V9H9V6H11Z"
                                                                 fill="#00234D" />
@@ -865,7 +867,8 @@
                             <div class="collection-filter filter-drawer">
                                 <div class="filter-widget d-lg-none d-flex align-items-center justify-content-between">
                                     <h5 class="heading_24">Filter By</h4>
-                                    <button type="button" class="btn-close text-reset filter-drawer-trigger d-lg-none"></button>
+                                        <button type="button"
+                                            class="btn-close text-reset filter-drawer-trigger d-lg-none"></button>
                                 </div>
 
                                 <div class="filter-widget d-lg-none">
@@ -878,7 +881,8 @@
                                         <span class="faq-heading-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="icon icon-down">
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-down">
                                                 <polyline points="6 9 12 15 18 9"></polyline>
                                             </svg>
                                         </span>
@@ -903,7 +907,8 @@
                                         <span class="faq-heading-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="icon icon-down">
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-down">
                                                 <polyline points="6 9 12 15 18 9"></polyline>
                                             </svg>
                                         </span>
@@ -948,7 +953,8 @@
                                         <span class="faq-heading-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="icon icon-down">
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-down">
                                                 <polyline points="6 9 12 15 18 9"></polyline>
                                             </svg>
                                         </span>
@@ -979,7 +985,8 @@
                                         <span class="faq-heading-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="icon icon-down">
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-down">
                                                 <polyline points="6 9 12 15 18 9"></polyline>
                                             </svg>
                                         </span>
@@ -987,13 +994,13 @@
                                     <div id="filter-price" class="accordion-collapse collapse show">
                                         <div class="filter-price d-flex align-items-center justify-content-between">
                                             <div class="filter-field">
-                                                <input class="field-input" type="number" placeholder="$0" min="0"
-                                                    max="2000.00">
+                                                <input class="field-input" type="number" placeholder="$0"
+                                                    min="0" max="2000.00">
                                             </div>
                                             <div class="filter-separator px-3">To</div>
                                             <div class="filter-field">
-                                                <input class="field-input" type="number" min="0" placeholder="$595.00"
-                                                    max="2000.00">
+                                                <input class="field-input" type="number" min="0"
+                                                    placeholder="$595.00" max="2000.00">
                                             </div>
                                         </div>
                                     </div>
@@ -1005,7 +1012,8 @@
                                         <span class="faq-heading-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="icon icon-down">
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-down">
                                                 <polyline points="6 9 12 15 18 9"></polyline>
                                             </svg>
                                         </span>
@@ -1088,7 +1096,8 @@
                                         <span class="faq-heading-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="icon icon-down">
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-down">
                                                 <polyline points="6 9 12 15 18 9"></polyline>
                                             </svg>
                                         </span>
@@ -1146,8 +1155,9 @@
                                         Vendor
                                         <span class="faq-heading-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="icon icon-down">
+                                                viewBox="0 0 24 24" fill="none" stroke="#000"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-down">
                                                 <polyline points="6 9 12 15 18 9"></polyline>
                                             </svg>
                                         </span>
@@ -1226,8 +1236,9 @@
                                         Product Type
                                         <span class="faq-heading-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" class="icon icon-down">
+                                                viewBox="0 0 24 24" fill="none" stroke="#000"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-down">
                                                 <polyline points="6 9 12 15 18 9"></polyline>
                                             </svg>
                                         </span>
@@ -1356,7 +1367,8 @@
                                 </div>
                                 <div class="filter-widget">
                                     <a href="product.html">
-                                        <img class="rounded" src="assets/img/banner/collection.jpg" alt="img">
+                                        <img class="rounded" src="assets/img/banner/collection.jpg"
+                                            alt="img">
                                     </a>
                                 </div>
                             </div>

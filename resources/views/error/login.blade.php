@@ -10,7 +10,7 @@
                     <img src="assets/img/error/error.png" alt="error">
                 </div>
                 <p class="error-subtitle">Page Not Found</p>
-                <a href="index.html" class="btn-primary mt-4">BACK TO HOMEPAGE</a>
+                <a href="/home" class="btn-primary mt-4">BACK TO HOMEPAGE</a>
             </div>
         </div>
     </div>
