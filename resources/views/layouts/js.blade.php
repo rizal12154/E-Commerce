@@ -1,0 +1,10 @@
+    <script type="text/javascript" src="{{ asset('') }}js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ asset('') }}js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ asset('') }}js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="{{ asset('') }}js/carousel.js"></script>
+    <script type="text/javascript" src="{{ asset('') }}js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="{{ asset('') }}js/lazysize.min.js"></script>
+    <script type="text/javascript" src="{{ asset('') }}js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="{{ asset('') }}js/wow.min.js"></script>
+    <script type="text/javascript" src="{{ asset('') }}js/multiple-modal.js"></script>
+    <script type="text/javascript" src="{{ asset('') }}js/main.js"></script>
