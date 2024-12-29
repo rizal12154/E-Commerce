@@ -69,9 +69,9 @@
                                 <li class="menu-item">
                                     <a href="/shop" class="item-link">Shop</a>
                                 </li>
-                                <li class="menu-item">
+                                {{-- <li class="menu-item">
                                     <a href="/produk" class="item-link">Products</a>
-                                </li>
+                                </li> --}}
                                 <li class="menu-item position-relative">
                                     <a href="/contact" class="item-link">Contact</a>
                                 </li>
