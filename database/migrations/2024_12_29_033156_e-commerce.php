@@ -8,70 +8,60 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('shops', function (Blueprint $table) {
+        Schema::create('kategori', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('description')->nullable();
-            $table->string('address')->nullable();
-            $table->string('phone_number', 20)->nullable();
-            $table->string('email')->nullable();
+            $table->string('nama')->unique();
             $table->timestamps();
         });
 
-        Schema::create('products', function (Blueprint $table) {
+        Schema::create('produk', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('shop_id')->constrained('shops')->onDelete('cascade');
-            $table->string('name');
-            $table->text('description')->nullable();
-            $table->decimal('price', 10, 2);
-            $table->integer('stock');
-            $table->string('image_url')->nullable();
+            $table->string('nama');
+            $table->text('deskripsi')->nullable();
+            $table->decimal('harga', 10, 2);
+            $table->integer('stok');
+            $table->foreignId('kategori_id')->constrained('kategori')->onDelete('cascade');
+            $table->string('gambar')->nullable();
             $table->timestamps();
         });
 
-        Schema::create('carts', function (Blueprint $table) {
+        Schema::create('pesanan', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
-            $table->integer('quantity');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->timestamp('tanggal_pesanan')->useCurrent();
+            $table->enum('status', ['tertunda', 'dibayar', 'dikirim', 'selesai', 'dibatalkan'])->default('tertunda');
+            $table->decimal('total_harga', 10, 2);
             $table->timestamps();
         });
 
-        Schema::create('checkouts', function (Blueprint $table) {
+        Schema::create('item_pesanan', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->foreignId('cart_id')->constrained('carts')->onDelete('cascade');
-            $table->decimal('total_price', 10, 2);
-            $table->enum('payment_status', ['pending', 'completed', 'failed'])->default('pending');
+            $table->foreignId('pesanan_id')->constrained('pesanan')->onDelete('cascade');
+            $table->foreignId('produk_id')->constrained('produk')->onDelete('cascade');
+            $table->integer('jumlah');
+            $table->decimal('harga', 10, 2);
+            $table->decimal('subtotal', 10, 2);
             $table->timestamps();
         });
 
-        Schema::create('contacts', function (Blueprint $table) {
+        Schema::create('pembayaran', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');
-            $table->string('subject');
-            $table->text('message');
-            $table->string('email');
+            $table->foreignId('pesanan_id')->constrained('pesanan')->onDelete('cascade');
+            $table->enum('metode_pembayaran', ['kartu_kredit', 'paypal', 'transfer_bank']);
+            $table->timestamp('tanggal_pembayaran')->nullable();
+            $table->decimal('jumlah', 10, 2);
+            $table->enum('status', ['tertunda', 'selesai', 'gagal'])->default('tertunda');
             $table->timestamps();
         });
 
-        Schema::create('home_pages', function (Blueprint $table) {
+        Schema::create('keranjang', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('banner_image_url')->nullable();
-            $table->text('welcome_text')->nullable();
-            $table->text('featured_products')->nullable();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('produk_id')->constrained('produk')->onDelete('cascade');
+            $table->integer('jumlah');
             $table->timestamps();
         });
     }
 
-    public function down(): void
-    {
-        Schema::dropIfExists('home_pages');
-        Schema::dropIfExists('contacts');
-        Schema::dropIfExists('checkouts');
-        Schema::dropIfExists('carts');
-        Schema::dropIfExists('products');
-        Schema::dropIfExists('shops');
-    }
+    public function down(): void {}
 };
