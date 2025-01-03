@@ -2,16 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kategori;
+// use App\Models\Kategori;
 use Illuminate\Http\Request;
 
 class Kategori extends Controller
 {
-
     public function index()
     {
-        $kategori = Kategori::all();
-        return view('kategori.index', compact('kategori'));
+        //
     }
 
     /**
