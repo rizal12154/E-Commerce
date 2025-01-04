@@ -11,7 +11,7 @@ class Pembayaran extends Controller
      */
     public function index()
     {
-        //
+        return view('pembayaran.index');
     }
 
     /**
@@ -19,7 +19,7 @@ class Pembayaran extends Controller
      */
     public function create()
     {
-        //
+        return view('pembayaran.create');
     }
 
     /**

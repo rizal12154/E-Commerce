@@ -1,7 +1,7 @@
-@include('layouts.css')
+@extends('layouts.app')
 @section('title', 'Shop')
 
-@include('layouts.header')
+@section('content')
     <!-- page-title -->
     <div class="tf-page-title">
         <div class="container-full">
@@ -96,7 +96,7 @@
                         <div id="sale-products" class="collapse show">
                             <div class="widget-featured-products mb_36">
                                 <div class="featured-product-item">
-                                    <a href="product-detail.html" class="card-product-wrapper">
+                                    <a href="/produk" class="card-product-wrapper">
                                         <img class="lazyload img-product" data-src="images/products/img-feature-1.png"
                                             alt="image-feature">
                                     </a>
@@ -106,7 +106,7 @@
                                     </div>
                                 </div>
                                 <div class="featured-product-item">
-                                    <a href="product-detail.html" class="card-product-wrapper">
+                                    <a href="/produk" class="card-product-wrapper">
                                         <img class="lazyload img-product" data-src="images/products/img-feature-2.png"
                                             alt="image-feature">
                                     </a>
@@ -116,7 +116,7 @@
                                     </div>
                                 </div>
                                 <div class="featured-product-item">
-                                    <a href="product-detail.html" class="card-product-wrapper">
+                                    <a href="/produk" class="card-product-wrapper">
                                         <img class="lazyload img-product" data-src="images/products/img-feature-3.png"
                                             alt="image-feature">
                                     </a>
@@ -189,24 +189,24 @@
                         </div>
                         <div id="gallery" class="collapse show">
                             <div class="grid-3 gap-4 mb_36">
-                                <a href="product-detail.html" class="item-gallery">
+                                <a href="/produk" class="item-gallery">
                                     <img class="lazyload" data-src="images/shop/gallery/gallery-1.jpg" alt="img-gallery">
                                 </a>
-                                <a href="product-detail.html" class="item-gallery">
+                                <a href="/produk" class="item-gallery">
                                     <img class="lazyload" data-src="images/shop/gallery/gallery-2.jpg" alt="img-gallery">
                                 </a>
-                                <a href="product-detail.html" class="item-gallery">
+                                <a href="/produk" class="item-gallery">
                                     <img class="lazyload" data-src="images/shop/gallery/gallery-3.jpg"
                                         src="images/shop/gallery/gallery-3.jpg" alt="img-gallery">
                                 </a>
-                                <a href="product-detail.html" class="item-gallery">
+                                <a href="/produk" class="item-gallery">
                                     <img class="lazyload" data-src="images/shop/gallery/gallery-4.jpg" alt="img-gallery">
                                 </a>
-                                <a href="product-detail.html" class="item-gallery">
+                                <a href="/produk" class="item-gallery">
                                     <img class="lazyload" data-src="images/shop/gallery/gallery-5.jpg"
                                         src="images/shop/gallery/gallery-5.jpg" alt="img-gallery">
                                 </a>
-                                <a href="product-detail.html" class="item-gallery">
+                                <a href="/produk" class="item-gallery">
                                     <img class="lazyload" data-src="images/shop/gallery/gallery-6.jpg"
                                         src="images/shop/gallery/gallery-6.jpg" alt="img-gallery">
                                 </a>
@@ -241,7 +241,7 @@
                         <!-- card product 1 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/orange-1.jpg"
                                         src="images/products/orange-1.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/white-1.jpg"
@@ -272,7 +272,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Ribbed Tank Top</a>
+                                <a href="/produk" class="title link">Ribbed Tank Top</a>
                                 <span class="price">$16.95</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -299,7 +299,7 @@
                         <!-- card product 2 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/brown.jpg"
                                         src="images/products/brown.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/purple.jpg"
@@ -341,7 +341,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Ribbed modal T-shirt</a>
+                                <a href="/produk" class="title link">Ribbed modal T-shirt</a>
                                 <span class="price">From $18.95</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -368,7 +368,7 @@
                         <!-- card product 3 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/white-3.jpg"
                                         src="images/products/white-3.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/white-4.jpg"
@@ -399,14 +399,14 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Oversized Printed T-shirt</a>
+                                <a href="/produk" class="title link">Oversized Printed T-shirt</a>
                                 <span class="price">$10.00</span>
                             </div>
                         </div>
                         <!-- card product 4 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/white-2.jpg"
                                         src="images/products/white-2.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/pink-1.jpg"
@@ -443,7 +443,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title">Oversized Printed T-shirt</a>
+                                <a href="/produk" class="title">Oversized Printed T-shirt</a>
                                 <span class="price">$16.95</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -470,7 +470,7 @@
                         <!-- card product 5 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/brown-2.jpg"
                                         src="images/products/brown-2.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/brown-3.jpg"
@@ -507,7 +507,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">V-neck linen T-shirt</a>
+                                <a href="/produk" class="title link">V-neck linen T-shirt</a>
                                 <span class="price">$114.95</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -528,7 +528,7 @@
                         <!-- card product 6 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/light-green-1.jpg"
                                         src="images/products/light-green-1.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/light-green-2.jpg"
@@ -559,7 +559,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Loose Fit Sweatshirt</a>
+                                <a href="/produk" class="title link">Loose Fit Sweatshirt</a>
                                 <span class="price">$10.00</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -604,7 +604,7 @@
                         <!-- card product 7 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/black-4.jpg"
                                         src="images/products/black-4.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/black-5.jpg"
@@ -640,7 +640,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Regular Fit Oxford Shirt</a>
+                                <a href="/produk" class="title link">Regular Fit Oxford Shirt</a>
                                 <span class="price">$10.00</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -679,7 +679,7 @@
                         <!-- card product 8 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/white-8.jpg"
                                         src="images/products/white-8.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/black-6.jpg"
@@ -716,7 +716,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Loose Fit Hoodie</a>
+                                <a href="/produk" class="title link">Loose Fit Hoodie</a>
                                 <span class="price">$9.95</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -743,7 +743,7 @@
                         <!-- card product 9 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/brown-4.jpg"
                                         src="images/products/brown-4.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/black-8.jpg"
@@ -779,7 +779,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Patterned scarf</a>
+                                <a href="/produk" class="title link">Patterned scarf</a>
                                 <span class="price">$14.95</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -800,7 +800,7 @@
                         <!-- card product 10 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/black-9.jpg"
                                         src="images/products/black-9.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/black-10.jpg"
@@ -836,7 +836,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Slim Fit Fine-knit Turtleneck Sweater</a>
+                                <a href="/produk" class="title link">Slim Fit Fine-knit Turtleneck Sweater</a>
                                 <span class="price">$18.95</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -857,7 +857,7 @@
                         <!-- card product 11 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/grey-2.jpg"
                                         src="images/products/grey-2.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/grey.jpg"
@@ -893,7 +893,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Slim Fit Fine-knit Turtleneck Sweater</a>
+                                <a href="/produk" class="title link">Slim Fit Fine-knit Turtleneck Sweater</a>
                                 <span class="price">$18.95</span>
                                 <ul class="list-color-product">
                                     <li class="list-color-item color-swatch active">
@@ -920,7 +920,7 @@
                         <!-- card product 12 -->
                         <div class="card-product">
                             <div class="card-product-wrapper">
-                                <a href="product-detail.html" class="product-img">
+                                <a href="/produk" class="product-img">
                                     <img class="lazyload img-product" data-src="images/products/black-11.jpg"
                                         src="images/products/black-11.jpg" alt="image-product">
                                     <img class="lazyload img-hover" data-src="images/products/black-12.jpg"
@@ -956,7 +956,7 @@
                                 </div>
                             </div>
                             <div class="card-product-info">
-                                <a href="product-detail.html" class="title link">Slim Fit Fine-knit Turtleneck Sweater</a>
+                                <a href="/produk" class="title link">Slim Fit Fine-knit Turtleneck Sweater</a>
                                 <span class="price">$18.95</span>
 
                             </div>
@@ -991,6 +991,4 @@
         <button data-bs-toggle="offcanvas" data-bs-target="#sidebarmobile" aria-controls="offcanvas"><i
                 class="icon icon-sidebar-2"></i></button>
     </div>
-
-    @include('layouts.footer')
-    @include('layouts.js')
+@endsection

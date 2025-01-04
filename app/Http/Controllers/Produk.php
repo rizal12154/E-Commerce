@@ -11,7 +11,7 @@ class Produk extends Controller
      */
     public function index()
     {
-        //
+        return view('produk.index');
     }
 
     /**

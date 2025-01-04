@@ -1,36 +1,11 @@
-@include('layouts.css')
+@extends('layouts.app')
 
 @section('title', 'Cart')
 
-@include('layouts.header')
-    <!-- page-title -->
-    <div class="tf-page-title">
-        <div class="container-full">
-            <div class="heading text-center">Shopping Cart</div>
-        </div>
-    </div>
-    <!-- /page-title -->
-
+@section('content')
     <!-- page-cart -->
     <section class="flat-spacing-11">
         <div class="container">
-            <!-- <div class="tf-page-cart text-center mt_140 mb_200">
-                        <h5 class="mb_24">Your cart is empty</h5>
-                        <p class="mb_24">You may check out all the available products and buy some in the shop</p>
-                        <a href="shop-default.html" class="tf-btn btn-sm radius-3 btn-fill btn-icon animate-hover-btn">Return to shop<i class="icon icon-arrow1-top-left"></i></a>
-                    </div> -->
-            <div class="tf-cart-countdown">
-                <div class="title-left">
-                    <svg class="d-inline-block" xmlns="http://www.w3.org/2000/svg" width="16" height="24"
-                        viewBox="0 0 16 24" fill="rgb(219 18 21)">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M10.0899 24C11.3119 22.1928 11.4245 20.2409 10.4277 18.1443C10.1505 19.2691 9.64344 19.9518 8.90645 20.1924C9.59084 18.2379 9.01896 16.1263 7.19079 13.8576C7.15133 16.2007 6.58824 17.9076 5.50148 18.9782C4.00436 20.4517 4.02197 22.1146 5.55428 23.9669C-0.806588 20.5819 -1.70399 16.0418 2.86196 10.347C3.14516 11.7228 3.83141 12.5674 4.92082 12.8809C3.73335 7.84186 4.98274 3.54821 8.66895 0C8.6916 7.87426 11.1062 8.57414 14.1592 12.089C17.4554 16.3071 15.5184 21.1748 10.0899 24Z">
-                        </path>
-                    </svg>
-                    <p>These products are limited, checkout within </p>
-                </div>
-                <div class="js-countdown timer-count" data-timer="600" data-labels="d:,h:,m:,s"></div>
-            </div>
             <div class="tf-page-cart-wrap">
                 <div class="tf-page-cart-item">
                     <form>
@@ -46,11 +21,11 @@
                             <tbody>
                                 <tr class="tf-cart-item file-delete">
                                     <td class="tf-cart-item_product">
-                                        <a href="product-detail.html" class="img-box">
+                                        <a href="/produk" class="img-box">
                                             <img src="images/products/white-2.jpg" alt="img-product">
                                         </a>
                                         <div class="cart-info">
-                                            <a href="product-detail.html" class="cart-title link">Oversized Printed
+                                            <a href="/produk" class="cart-title link">Oversized Printed
                                                 T-shirt</a>
                                             <div class="cart-meta-variant">White / M</div>
                                             <span class="remove-cart link remove">Remove</span>
@@ -88,11 +63,11 @@
                                 </tr>
                                 <tr class="tf-cart-item file-delete">
                                     <td class="tf-cart-item_product">
-                                        <a href="product-detail.html" class="img-box">
+                                        <a href="/produk" class="img-box">
                                             <img src="images/products/orange-1.jpg" alt="img-product">
                                         </a>
                                         <div class="cart-info">
-                                            <a href="product-detail.html" class="cart-title link">Ribbed Tank Top</a>
+                                            <a href="/produk" class="cart-title link">Ribbed Tank Top</a>
                                             <div class="cart-meta-variant">Orange / S</div>
                                             <span class="remove-cart link remove">Remove</span>
                                         </div>
@@ -129,11 +104,11 @@
                                 </tr>
                                 <tr class="tf-cart-item file-delete">
                                     <td class="tf-cart-item_product">
-                                        <a href="product-detail.html" class="img-box">
+                                        <a href="/produk" class="img-box">
                                             <img src="images/products/black-4.jpg" alt="img-product">
                                         </a>
                                         <div class="cart-info">
-                                            <a href="product-detail.html" class="cart-title link">Regular Fit Oxford
+                                            <a href="/produk" class="cart-title link">Regular Fit Oxford
                                                 Shirt</a>
                                             <div class="cart-meta-variant">Black / L</div>
                                             <span class="remove-cart link remove">Remove</span>
@@ -292,7 +267,7 @@
                                 <span class="total-value">$18.00 USD</span>
                             </div>
                             <p class="tf-cart-tax">
-                                Taxes and <a href="shipping-delivery.html">shipping</a> calculated at checkout
+                                Taxes and shipping calculated at checkout
                             </p>
                             <div class="cart-checkbox">
                                 <input type="checkbox" class="tf-check" id="check-agree">
@@ -301,7 +276,7 @@
                                 </label>
                             </div>
                             <div class="cart-checkout-btn">
-                                <a href="checkout.html"
+                                <a href="/pembayaran/create"
                                     class="tf-btn w-100 btn-fill animate-hover-btn radius-3 justify-content-center">
                                     <span>Check out</span>
                                 </a>
@@ -421,5 +396,4 @@
         </div>
     </section>
     <!-- page-cart -->
-@include('layouts.footer')
-@include('layouts.js')
+@endsection
