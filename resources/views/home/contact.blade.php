@@ -1,13 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Kontak Kami')
 @section('content')
-    <!-- page-title -->
-    <div class="tf-page-title style-2">
-        <div class="container-full">
-            <div class="heading text-center">Contact Us</div>
-        </div>
-    </div>
-    <!-- /page-title -->
     <!-- map -->
     <section class="flat-spacing-9">
         <div class="container">

@@ -2,18 +2,6 @@
 @section('title', 'Shop')
 
 @section('content')
-    <!-- page-title -->
-    <div class="tf-page-title">
-        <div class="container-full">
-            <div class="row">
-                <div class="col-12">
-                    <div class="heading text-center">New Arrival</div>
-                    <p class="text-center text-2 text_black-2 mt_5">Shop through our latest selection of Fashion</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /page-title -->
     <section class="flat-spacing-1">
         <div class="container">
             <div class="tf-shop-control grid-3 align-items-center">
@@ -28,7 +16,7 @@
                         <div class="item"><span class="icon icon-grid-3"></span></div>
                     </li>
                     <li class="tf-view-layout-switch sw-layout-4" data-value-grid="grid-4">
-                        <div class="item"><span class="icon icon-grid-4"></span></div>
+                        <div class="item" ><span class="icon icon-grid-4"></span></div>
                     </li>
 
                 </ul>

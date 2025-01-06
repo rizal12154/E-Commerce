@@ -4,29 +4,36 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home;
 use App\Http\Controllers\Shop;
 use App\Http\Controllers\Contact;
-use App\Http\Controllers\Kategori;
-use App\Http\Controllers\Produk;
-use App\Http\Controllers\Keranjang;
-use App\Http\Controllers\Order;
-use App\Http\Controllers\Pembayaran;
+use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\PembayaranController;
+use App\Http\Controllers\PesananController;
 use App\Http\Controllers\User;
 
+// Halaman utama
+Route::get('/home', [Home::class, 'index'])->name('home.index');
 
-Route::get('/home', [Home::class, 'index']);
+// Halaman toko
+Route::get('/shop', [Shop::class, 'index'])->name('shop.index');
 
-Route::get('/shop', [Shop::class, 'index']);
+// Halaman kategori
+Route::resource('kategori', KategoriController::class)->except(['show']);
 
-Route::get('/kategori', [Kategori::class, 'index']);
+// Halaman produk
+Route::resource('produk', ProdukController::class)->except(['show']);
 
-Route::get('/produk', [Produk::class, 'index']);
+// Halaman keranjang
+Route::resource('keranjang', KeranjangController::class)->only(['index', 'store', 'destroy']);
 
-Route::get('/keranjang', [Keranjang::class, 'index']);
+// Halaman pesanan
+Route::resource('pesanan', PesananController::class)->only(['index', 'show', 'store']);
 
-Route::get('/order', [Order::class, 'index']);
+// Halaman pembayaran
+Route::resource('pembayaran', PembayaranController::class)->only(['index', 'create', 'store']);
 
-Route::get('/pembayaran', [Pembayaran::class, 'index']);
-Route::get('/pembayaran/create', [Pembayaran::class, 'create']);
+// Halaman pengguna
+Route::get('/user', [User::class, 'index'])->name('user.index');
 
-Route::get('/user', [User::class, 'index']);
-
-Route::get('/contact', [Contact::class, 'index']);
+// Halaman kontak
+Route::get('/contact', [Contact::class, 'index'])->name('contact.index');
