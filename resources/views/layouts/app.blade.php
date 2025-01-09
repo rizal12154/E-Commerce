@@ -38,7 +38,7 @@
     <!-- Footer -->
     @include('layouts.footer')
     <!-- /Footer -->
-    
+
     <!-- Javascript -->
     @include('layouts.js')
 </body>

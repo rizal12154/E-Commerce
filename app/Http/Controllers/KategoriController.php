@@ -24,35 +24,31 @@ class KategoriController extends Controller
             'nama' => 'required|string|max:255',
         ]);
 
-        Kategori::create([
-            'nama' => $request->nama,
-        ]);
-
-        return redirect()->route('kategori.index')->with('success', 'Kategori Berhasil Ditambahkan');
+        Kategori::create($request->all());
+        return redirect()->route('kategori.index');
     }
 
-    public function edit(string $id)
+    public function edit($id)
     {
-        $kategori = Kategori::findorFail($id);
+        $kategori = Kategori::findOrFail($id);
         return view('kategori.edit', compact('kategori'));
     }
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
         $request->validate([
-            'nama' => 'required|string|max:255'
+            'nama' => 'required|string|max:255',
         ]);
 
-        $kategori = Kategori::findorFail('id');
-        $kategori->update([
-            'nama' => $request->nama,
-        ]);
-
-        return redirect()->route('kategori.index')->with('success', 'Kategori berhasil diperbarui');
+        $kategori = Kategori::findOrFail($id);
+        $kategori->update($request->all());
+        return redirect()->route('kategori.index');
     }
 
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        $kategori = Kategori::findOrFail($id);
+        $kategori->delete();
+        return redirect()->route('kategori.index');
     }
 }

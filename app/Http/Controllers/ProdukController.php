@@ -2,80 +2,59 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kategori;
 use App\Models\Produk;
 use Illuminate\Http\Request;
 
 class ProdukController extends Controller
 {
-
     public function index()
     {
-        $kategori = Produk::all();
+        $produk = Produk::with('kategori')->get();
         return view('produk.index', compact('produk'));
     }
 
     public function create()
     {
-        $kategori = Kategori::all();
-        return view('produk.create', compact('kategori'));
+        return view('produk.create');
     }
 
     public function store(Request $request)
     {
         $request->validate([
+            'kategori_id' => 'required|exists:kategori,id',
             'nama' => 'required|string|max:255',
-            'deskripsi' => 'required|string|max:255',
-            'harga' => 'required|decimal',
+            'harga' => 'required|numeric',
             'stok' => 'required|integer',
-            'kategori_id' => 'required|exists:kategori.id',
-            'gambar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        Produk::create([
-            'nama' => $request->nama,
-            'deskripsi' => $request->deskripsi,
-            'harga' => $request->harga,
-            'stok' => $request->stok,
-            'kategori_id' => $request->kategori_id,
-            'gambar' => $request->gambar->store('produk'),
-        ]);
-
-        return redirect()->route('produk.index')->with('success', 'Produk berhasil ditambahkan');
+        Produk::create($request->all());
+        return redirect()->route('produk.index');
     }
 
-    public function edit(string $id)
+    public function edit($id)
     {
-        $produk = Produk::findorFail($id);
-        $kategori = Kategori::all();
-        return view('produk.edit', compact('produk', 'kategori'));
+        $produk = Produk::findOrFail($id);
+        return view('produk.edit', compact('produk'));
     }
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
         $request->validate([
+            'kategori_id' => 'required|exists:kategori,id',
             'nama' => 'required|string|max:255',
-            'deskripsi' => 'required|string|max:255',
-            'harga' => 'required|decimal',
+            'harga' => 'required|numeric',
             'stok' => 'required|integer',
-            'kategori_id' => 'required|exists:kategori.id',
-            'gambar' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        $produk = Produk::findorFail($id);
-        $produk->update([
-            'nama' => $request->nama,
-            'deskripsi' => $request->deskripsi,
-            'harga' => $request->harga,
-            'stok' => $request->stok,
-            'kategori_id' => $request->kategori_id,
-        ]);
-
-        return redirect()->route('produk.index')->with('success', 'Produk berhasil diperbarui');
+        $produk = Produk::findOrFail($id);
+        $produk->update($request->all());
+        return redirect()->route('produk.index');
     }
 
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        
+        $produk = Produk::findOrFail($id);
+        $produk->delete();
+        return redirect()->route('produk.index');
     }
 }

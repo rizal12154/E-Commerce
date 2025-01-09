@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Home;
-use App\Http\Controllers\Shop;
-use App\Http\Controllers\Contact;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\KategoriController;
@@ -11,29 +10,54 @@ use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\PesananController;
 use App\Http\Controllers\User;
 
-// Halaman utama
-Route::get('/home', [Home::class, 'index'])->name('home.index');
+Route::get('/dashboard', [DashboardController::class, 'index']);
 
-// Halaman toko
-Route::get('/shop', [Shop::class, 'index'])->name('shop.index');
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/home', 'index')->name('home.index');
+    Route::get('/shop', 'shop')->name('shop.index');
+});
 
-// Halaman kategori
-Route::resource('kategori', KategoriController::class)->except(['show']);
 
-// Halaman produk
-Route::resource('produk', ProdukController::class)->except(['show']);
+Route::controller(KategoriController::class)->group(function () {
+    Route::get('/kategori', 'index')->name('kategori.index');
+    Route::post('/kategori', 'store')->name('kategori.store');
+    Route::put('/kategori/{id}', 'update')->name('kategori.update');
+    Route::delete('/kategori/{id}', 'destroy')->name('kategori.destroy');
+});
 
-// Halaman keranjang
-Route::resource('keranjang', KeranjangController::class)->only(['index', 'store', 'destroy']);
 
-// Halaman pesanan
-Route::resource('pesanan', PesananController::class)->only(['index', 'show', 'store']);
+Route::controller(ProdukController::class)->group(function () {
+    Route::get('/produk', 'index')->name('produk.index');
+    Route::post('/produk', 'store')->name('produk.store');
+    Route::put('/produk/{id}', 'update')->name('produk.update');
+    Route::delete('/produk/{id}', 'destroy')->name('produk.destroy');
+});
 
-// Halaman pembayaran
-Route::resource('pembayaran', PembayaranController::class)->only(['index', 'create', 'store']);
 
-// Halaman pengguna
-Route::get('/user', [User::class, 'index'])->name('user.index');
+Route::controller(KeranjangController::class)->group(function () {
+    Route::get('/keranjang', 'index')->name('keranjang.index');
+    Route::post('/keranjang', 'store')->name('keranjang.store');
+    Route::delete('/keranjang/{id}', 'destroy')->name('keranjang.destroy');
+});
 
-// Halaman kontak
-Route::get('/contact', [Contact::class, 'index'])->name('contact.index');
+
+Route::controller(PesananController::class)->group(function () {
+    Route::get('/pesanan', 'index')->name('pesanan.index');
+    Route::get('/pesanan/{id}', 'show')->name('pesanan.show');
+    Route::post('/pesanan', 'store')->name('pesanan.store');
+});
+
+
+Route::controller(PembayaranController::class)->group(function () {
+    Route::get('/pembayaran', 'index')->name('pembayaran.index');
+    Route::get('/pembayaran/create', 'create')->name('pembayaran.create');
+    Route::post('/pembayaran', 'store')->name('pembayaran.store');
+});
+
+
+Route::controller(User::class)->group(function () {
+    Route::get('/user', 'index')->name('user.index');
+});
+
+
+

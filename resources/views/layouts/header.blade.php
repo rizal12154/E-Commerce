@@ -15,39 +15,18 @@
                 </div>
                 <div class="col-xl-3 col-md-4 col-6">
                     <a href="/home" class="logo-header">
-                        <img src="{{ asset('') }}images/logo/logo.svg" alt="logo" class="logo">
+                        <img src="{{ asset('') }}images/logo/shop.svg"
+                            alt="https://www.svgrepo.com/" class="logo">
                     </a>
                 </div>
                 <div class="col-xl-6 tf-md-hidden">
                     <nav class="box-navigation text-center">
-                        <ul class="box-nav-ul d-flex align-items-center justify-content-center gap-30">
-                            <li class="menu-item">
-                                <a href="/home" class="item-link">Home</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/shop" class="item-link">Shop</a>
-                            </li>
-                            {{-- <li class="menu-item">
-                                    <a href="/produk" class="item-link">Products</a>
-                                </li> --}}
-                            <li class="menu-item position-relative">
-                                <a href="/contact" class="item-link">Contact</a>
-                            </li>
-                            {{-- <li class="menu-item position-relative">
-                                    <a href="#" class="item-link">Blog</a>
-                                </li> --}}
-                        </ul>
                     </nav>
                 </div>
                 <div class="col-xl-3 col-md-4 col-3">
                     <ul class="nav-icon d-flex justify-content-end align-items-center gap-20">
-                        <li class="nav-search"><a href="#canvasSearch" data-bs-toggle="offcanvas"
-                                aria-controls="offcanvasLeft" class="nav-icon-item"><i class="icon icon-search"></i></a>
-                        </li>
                         <li class="nav-account"><a href="#login" data-bs-toggle="modal" class="nav-icon-item"><i
                                     class="icon icon-account"></i></a></li>
-                        {{-- <li class="nav-wishlist"><a href="wishlist.html" class="nav-icon-item"><i
-                                    class="icon icon-heart"></i><span class="count-box">0</span></a></li> --}}
                         <li class="nav-cart"><a href="/keranjang" class="nav-icon-item"><i
                                     class="icon icon-bag"></i><span class="count-box"></span></a></li>
                     </ul>

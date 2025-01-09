@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-        <div class="tf-slideshow slider-radius slider-effect-fade position-relative">
+        <div class="tf-slideshow slider-radius slider-effect-fade position-relative mt-3">
             <div dir="ltr" class="swiper tf-sw-slideshow" data-preview="1" data-tablet="1" data-mobile="1"
                 data-centered="false" data-space="0" data-loop="true" data-auto-play="false" data-delay="2000"
                 data-speed="1000">
@@ -631,7 +631,7 @@
         </section>
         <!-- /Best seller -->
         <!-- brand -->
-        <section class="flat-spacing-5 pt_0">
+        <section class="flat-spacing-5 pt_2">
             <div class="container">
                 <div dir="ltr" class="swiper tf-sw-brand" data-loop="false" data-play="false" data-preview="6"
                     data-tablet="3" data-mobile="2" data-space-lg="0" data-space-md="0">

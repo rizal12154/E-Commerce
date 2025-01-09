@@ -9,15 +9,6 @@
                     <!-- <a href="#filterShop" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft" class="tf-btn-filter"><span class="icon icon-filter"></span><span class="text">Filter</span></a> -->
                 </div>
                 <ul class="tf-control-layout d-flex justify-content-center">
-                    <li class="tf-view-layout-switch sw-layout-2" data-value-grid="grid-2">
-                        <div class="item"><span class="icon icon-grid-2"></span></div>
-                    </li>
-                    <li class="tf-view-layout-switch sw-layout-3 active" data-value-grid="grid-3">
-                        <div class="item"><span class="icon icon-grid-3"></span></div>
-                    </li>
-                    <li class="tf-view-layout-switch sw-layout-4" data-value-grid="grid-4">
-                        <div class="item" ><span class="icon icon-grid-4"></span></div>
-                    </li>
 
                 </ul>
                 <div class="tf-control-sorting d-flex justify-content-end">
@@ -61,17 +52,16 @@
                     <div class="widget-facet wd-categories">
                         <div class="facet-title" data-bs-target="#categories" data-bs-toggle="collapse" aria-expanded="true"
                             aria-controls="categories">
-                            <span>Product categories</span>
+                            <span>Kategori Produk</span>
                             <span class="icon icon-arrow-up"></span>
                         </div>
                         <div id="categories" class="collapse show">
                             <ul class="list-categoris current-scrollbar mb_36">
                                 <li class="cate-item current"><a
-                                        href="#"><span>Fashion</span>&nbsp;<span>(31)</span></a></li>
-                                <li class="cate-item"><a href="#"><span>Men</span>&nbsp;<span>(9)</span></a></li>
-                                <li class="cate-item"><a href="#"><span>Women</span>&nbsp;<span>(23)</span></a></li>
-                                <li class="cate-item"><a href="#"><span>Denim</span>&nbsp;<span>(20)</span></a></li>
-                                <li class="cate-item"><a href="#"><span>Dress</span>&nbsp;<span>(23)</span></a></li>
+                                        href="#"><span>Semua</span>&nbsp;<span>(31)</span></a></li>
+                                <li class="cate-item"><a href="#"><span>Smartphone</span>&nbsp;<span>(9)</span></a></li>
+                                <li class="cate-item"><a href="#"><span>Headphone</span>&nbsp;<span>(23)</span></a></li>
+                                <li class="cate-item"><a href="#"><span>Elektronik</span>&nbsp;<span>(20)</span></a></li>
                             </ul>
                         </div>
                     </div>

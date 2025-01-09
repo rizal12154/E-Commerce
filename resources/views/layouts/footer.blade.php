@@ -7,22 +7,20 @@
                         <div class="footer-infor">
                             <div class="footer-logo">
                                 <a href="index.html">
-                                    <img src="images/logo/logo.svg" alt="">
+                                    <img src="images/logo/shop.svg" alt="https://www.svgrepo.com/">
                                 </a>
                             </div>
                             <ul>
                                 <li>
-                                    <p>Address: 1234 Fashion Street, Suite 567, <br> New York, NY 10001</p>
+                                    <p>Address: Rombiya Timur Ganding, <br>  Sumenep, Madura</p>
                                 </li>
                                 <li>
-                                    <p>Email: <a href="#">info@fashionshop.com</a></p>
+                                    <p>Email: <a href="#">rizalvanderoz12154@gmail.com</a></p>
                                 </li>
                                 <li>
-                                    <p>Phone: <a href="#">(212) 555-1234</a></p>
+                                    <p>Phone: <a href="#">(+62) 852-3128-6306</a></p>
                                 </li>
                             </ul>
-                            <a href="contact-1.html" class="tf-btn btn-line">Get direction<i
-                                    class="icon icon-arrow1-top-left"></i></a>
                             <ul class="tf-social-icon d-flex gap-10">
                                 <li><a href="#" class="box-icon w_34 round social-facebook social-line"><i
                                             class="icon fs-14 icon-fb"></i></a></li>

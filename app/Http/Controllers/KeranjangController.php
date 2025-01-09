@@ -9,7 +9,7 @@ class KeranjangController extends Controller
 {
     public function index()
     {
-        $keranjang = Keranjang::all();
+        $keranjang = Keranjang::with('produk')->get();
         return view('keranjang.index', compact('keranjang'));
     }
 }
