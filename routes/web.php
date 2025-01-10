@@ -20,6 +20,7 @@ Route::controller(HomeController::class)->group(function () {
 
 Route::controller(KategoriController::class)->group(function () {
     Route::get('/kategori', 'index')->name('kategori.index');
+    Route::get('/kategori/create', 'create')->name('kategori.create');
     Route::post('/kategori', 'store')->name('kategori.store');
     Route::put('/kategori/{id}', 'update')->name('kategori.update');
     Route::delete('/kategori/{id}', 'destroy')->name('kategori.destroy');
@@ -27,7 +28,8 @@ Route::controller(KategoriController::class)->group(function () {
 
 
 Route::controller(ProdukController::class)->group(function () {
-    Route::get('/produk', 'index')->name('produk.index');
+    Route::get('/produk_admin', 'index')->name('produk.index');
+    Route::get('/produk_admin/create', 'create')->name('produk.create');
     Route::post('/produk', 'store')->name('produk.store');
     Route::put('/produk/{id}', 'update')->name('produk.update');
     Route::delete('/produk/{id}', 'destroy')->name('produk.destroy');
@@ -58,6 +60,3 @@ Route::controller(PembayaranController::class)->group(function () {
 Route::controller(User::class)->group(function () {
     Route::get('/user', 'index')->name('user.index');
 });
-
-
-

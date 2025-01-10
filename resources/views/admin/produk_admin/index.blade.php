@@ -1,10 +1,5 @@
 @extends('include.admin')
 
-@section('title', 'Kategori')
-
-@section('admin')
-    @extends('include.admin')
-
 @section('title', 'Produk')
 
 @section('admin')
@@ -59,8 +54,12 @@
                                                     <label class="form-check-label" for="customCheck1">&nbsp;</label>
                                                 </div>
                                             </th>
-                                            <th>No.</th>
-                                            <th class="all">Kategori</th>
+                                            <th class="all">Product</th>
+                                            <th>Category</th>
+                                            <th>Added Date</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Status</th>
                                             <th style="width: 85px;">Action</th>
                                         </tr>
                                     </thead>
@@ -73,13 +72,39 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <h2>Hello World</h2>
+                                                <img src="assets/images/products/product-1.jpg" alt="contact-img"
+                                                    title="contact-img" class="rounded me-3" height="48" />
+                                                <p class="m-0 d-inline-block align-middle font-16">
+                                                    <a href="apps-ecommerce-products-details.html" class="text-body">Amazing
+                                                        Modern Chair</a>
+                                                    <br />
+                                                    <span class="text-warning mdi mdi-star"></span>
+                                                    <span class="text-warning mdi mdi-star"></span>
+                                                    <span class="text-warning mdi mdi-star"></span>
+                                                    <span class="text-warning mdi mdi-star"></span>
+                                                    <span class="text-warning mdi mdi-star"></span>
+                                                </p>
                                             </td>
                                             <td>
-                                                <h3>Hello World</h3>
+                                                Aeron Chairs
+                                            </td>
+                                            <td>
+                                                09/12/2018
+                                            </td>
+                                            <td>
+                                                $148.66
+                                            </td>
+
+                                            <td>
+                                                254
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-success">Active</span>
                                             </td>
 
                                             <td class="table-action">
+                                                <a href="javascript:void(0);" class="action-icon"> <i
+                                                        class="mdi mdi-eye"></i></a>
                                                 <a href="javascript:void(0);" class="action-icon"> <i
                                                         class="mdi mdi-square-edit-outline"></i></a>
                                                 <a href="javascript:void(0);" class="action-icon"> <i
@@ -98,6 +123,4 @@
         </div> <!-- container -->
 
     </div>
-@endsection
-
 @endsection
