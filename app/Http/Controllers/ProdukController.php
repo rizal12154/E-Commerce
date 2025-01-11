@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Produk;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
@@ -16,7 +17,8 @@ class ProdukController extends Controller
 
     public function create()
     {
-        return view('admin.produk_admin.create');
+        $data['kategori'] = Kategori::all();
+        return view('admin.produk_admin.create', $data);
     }
 
     public function store(Request $request)
