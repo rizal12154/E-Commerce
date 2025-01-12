@@ -10,7 +10,8 @@ class KategoriController extends Controller
     public function index()
     {
         $kategori = Kategori::all();
-        return view('admin.kategori.index', compact('kategori'));
+        $no = 1;
+        return view('admin.kategori.index', compact('kategori', 'no'));
     }
 
     public function create()
@@ -25,7 +26,8 @@ class KategoriController extends Controller
         ]);
 
         Kategori::create($request->all());
-        return redirect()->route('admin.kategori.index');
+
+        return redirect('/kategori')->with('status', 'Kategori berhasil ditambahkan');
     }
 
     public function edit($id)

@@ -12,49 +12,22 @@ use App\Http\Controllers\User;
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
 
-Route::controller(HomeController::class)->group(function () {
-    Route::get('/home', 'index')->name('home.index');
-    Route::get('/shop', 'shop')->name('shop.index');
-});
+Route::get('/home', [HomeController::class, 'index']);
+Route::get('/shop', [HomeController::class, 'shop']);
 
+Route::get('/kategori', [KategoriController::class, 'index'])->name('kategori.index');
+Route::get('/kategori/create', [KategoriController::class, 'create'])->name('kategori.create');
+Route::post('/kategori', [KategoriController::class, 'store'])->name('kategori.store');
+Route::get('/kategori/{id}', [KategoriController::class, 'edit'])->name('kategori.edit');
+Route::put('/kategori/{id}', [KategoriController::class, 'update'])->name('kategori.update');
+Route::delete('/kategori/{id}', [KategoriController::class, 'destroy'])->name('kategori.destroy');
 
-Route::controller(KategoriController::class)->group(function () {
-    Route::get('/kategori', 'index')->name('kategori.index');
-    Route::get('/kategori/create', 'create')->name('kategori.create');
-    Route::post('/kategori', 'store')->name('kategori.store');
-    Route::put('/kategori/{id}', 'update')->name('kategori.update');
-    Route::delete('/kategori/{id}', 'destroy')->name('kategori.destroy');
-});
-
-
-Route::controller(ProdukController::class)->group(function () {
-    Route::get('/produk_admin', 'index')->name('produk.index');
-    Route::get('/produk_admin/create', 'create')->name('produk.create');
-    Route::post('/produk', 'store')->name('produk.store');
-    Route::put('/produk/{id}', 'update')->name('produk.update');
-    Route::delete('/produk/{id}', 'destroy')->name('produk.destroy');
-});
-
-
-Route::controller(KeranjangController::class)->group(function () {
-    Route::get('/keranjang', 'index')->name('keranjang.index');
-    Route::post('/keranjang', 'store')->name('keranjang.store');
-    Route::delete('/keranjang/{id}', 'destroy')->name('keranjang.destroy');
-});
-
-
-Route::controller(PesananController::class)->group(function () {
-    Route::get('/pesanan', 'index')->name('pesanan.index');
-    Route::get('/pesanan/{id}', 'show')->name('pesanan.show');
-    Route::post('/pesanan', 'store')->name('pesanan.store');
-});
-
-
-Route::controller(PembayaranController::class)->group(function () {
-    Route::get('/pembayaran', 'index')->name('pembayaran.index');
-    Route::get('/pembayaran/create', 'create')->name('pembayaran.create');
-    Route::post('/pembayaran', 'store')->name('pembayaran.store');
-});
+Route::get('/produk', [ProdukController::class, 'index'])->name('produk.index');
+Route::get('/produk/create', [ProdukController::class, 'create'])->name('produk.create');
+Route::post('/produk', [ProdukController::class, 'store'])->name('produk.store');
+Route::get('/produk/{id}', [ProdukController::class, 'edit'])->name('produk.edit');
+Route::put('/produk/{id}', [ProdukController::class, 'update'])->name('produk.update');
+Route::delete('/produk/{id}', [ProdukController::class, 'destroy'])->name('produk.destroy');
 
 
 Route::controller(User::class)->group(function () {

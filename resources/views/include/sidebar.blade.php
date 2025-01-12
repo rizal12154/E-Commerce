@@ -51,7 +51,7 @@
             </li>
 
             <li class="side-nav-item">
-                <a href="/produk_admin" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
+                <a href="/produk" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
                     <i class="uil-store"></i>
                     <span> Produk </span>
                 </a>

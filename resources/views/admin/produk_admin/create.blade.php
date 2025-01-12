@@ -33,13 +33,15 @@
                                 <div class="tab-pane show active" id="input-types-preview">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <form method="POST" action="">
+                                            <form method="POST" action="{{ route('produk.store') }}"
+                                                enctype="multipart/form-data">
                                                 @csrf
                                                 <div class="mb-3">
                                                     <label for="nama" class="form-label">Nama Barang</label>
-                                                    <input type="text"
-                                                        @error('nama') value="{{ old('nama') }}" @enderror id="nama"
-                                                        class="form-control" required placeholder="Nama Barang...">
+                                                    <input type="text" name="nama" value="{{ old('nama') }}"
+                                                        id="nama"
+                                                        class="form-control @error('nama') is-invalid @enderror" required
+                                                        placeholder="Nama Barang...">
                                                     @error('nama')
                                                         <small class="text-danger">{{ $message }}</small>
                                                     @enderror
@@ -47,10 +49,8 @@
 
                                                 <div class="mb-3">
                                                     <label for="deskripsi" class="form-label">Deskripsi</label>
-                                                    <textarea
-                                                        @error('deskripsi') value="{{ old('deskripsi') }}"
-                                                        @enderror
-                                                        class="form-control" id="deskripsi" rows="5" required placeholder="Deskripsi..."></textarea>
+                                                    <textarea class="form-control @error('deskripsi') is-invalid @enderror" name="deskripsi" id="deskripsi" rows="5"
+                                                        required placeholder="Deskripsi...">{{ old('deskripsi') }}</textarea>
                                                     @error('deskripsi')
                                                         <small class="text-danger">{{ $message }}</small>
                                                     @enderror
@@ -58,21 +58,19 @@
 
                                                 <div class="mb-3">
                                                     <label for="harga" class="form-label">Harga</label>
-                                                    <input type="text"
-                                                        @error('harga') value="{{ old('harga') }}"
-                                                        @enderror
-                                                        id="harga" class="form-control" placeholder="Harga...">
+                                                    <input type="number" name="harga" value="{{ old('harga') }}"
+                                                        id="harga"
+                                                        class="form-control @error('harga') is-invalid @enderror" required
+                                                        placeholder="Harga...">
                                                     @error('harga')
                                                         <small class="text-danger">{{ $message }}</small>
                                                     @enderror
                                                 </div>
 
                                                 <div class="mb-3">
-                                                    <label for="gambar" class="form-label">Tambah gambar</label>
-                                                    <input type="file"
-                                                        @error('gambar') value="{{ old('gambar') }}"
-                                                        @enderror
-                                                        id="gambar" class="form-control">
+                                                    <label for="gambar" class="form-label">Tambah Gambar</label>
+                                                    <input type="file" name="gambar" id="gambar"
+                                                        class="form-control @error('gambar') is-invalid @enderror">
                                                     @error('gambar')
                                                         <small class="text-danger">{{ $message }}</small>
                                                     @enderror
@@ -80,36 +78,37 @@
 
                                                 <div class="mb-3">
                                                     <label for="stok" class="form-label">Stok</label>
-                                                    <input class="form-control"
-                                                        @error('stok') value="{{ old('stok') }}"
-                                                        @enderror
-                                                        id="stok" type="number" name="number">
+                                                    <input type="number" name="stok" value="{{ old('stok') }}"
+                                                        id="stok"
+                                                        class="form-control @error('stok') is-invalid @enderror" required
+                                                        placeholder="Stok...">
                                                     @error('stok')
                                                         <small class="text-danger">{{ $message }}</small>
                                                     @enderror
-
-                                                    <div class="mb-3">
-                                                        <label for="id_kategori" class="form-label">Kategori
-                                                            Barang</label>
-                                                        <select
-                                                            @error('id_kategori') value="{{ old('id_kategori') }}"
-                                                            @enderror
-                                                            class="form-select" id="id_kategori">
-                                                            <option>Pilih Kategori</option>
-                                                            @foreach ($kategori as $get)
-                                                                <option value="{{ $get->id }}">{{ $get->kategori }}
-                                                                </option>
-                                                            @endforeach
-                                                        </select>
-                                                        @error('id_kategori')
-                                                            <small class="text-danger">{{ $message }}</small>
-                                                        @enderror
-                                                    </div>
-
                                                 </div>
+
+                                                <div class="mb-3">
+                                                    <label for="kategori_id" class="form-label">Kategori Barang</label>
+                                                    <select name="kategori_id" id="kategori_id"
+                                                        class="form-select @error('kategori_id') is-invalid @enderror"
+                                                        required>
+                                                        <option value="" disabled selected>Pilih Kategori</option>
+                                                        @foreach ($kategori as $get)
+                                                            <option value="{{ $get->id }}"
+                                                                {{ old('kategori_id') == $get->id ? 'selected' : '' }}>
+                                                                {{ $get->nama }}
+                                                            </option>
+                                                        @endforeach
+                                                    </select>
+                                                    @error('kategori_id')
+                                                        <small class="text-danger">{{ $message }}</small>
+                                                    @enderror
+                                                </div>
+
                                                 <button type="submit" class="btn btn-primary">Submit</button>
-                                                <a href="/produk_admin" type="button" class="btn btn-danger">Kembali</a>
+                                                <a href="{{ route('produk.index') }}" class="btn btn-danger">Kembali</a>
                                             </form>
+
                                         </div> <!-- end col -->
                                     </div>
                                     <!-- end row-->

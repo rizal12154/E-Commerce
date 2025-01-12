@@ -15,7 +15,7 @@
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
-                                <li class="breadcrumb-item"><a href="/produk_admin">Kategori</a></li>
+                                <li class="breadcrumb-item"><a href="/kategori">Kategori</a></li>
                                 <li class="breadcrumb-item active">Tambah Kategori</li>
                             </ol>
                         </div>
@@ -37,7 +37,7 @@
                                                 @csrf
                                                 <div class="mb-3">
                                                     <label for="nama" class="form-label">Nama Kategori</label>
-                                                    <input type="text"
+                                                    <input type="text" name="nama"
                                                         @error('nama') value="{{ old('nama') }}" @enderror id="nama"
                                                         class="form-control" required placeholder="Nama Kategori...">
                                                     @error('nama')
@@ -45,7 +45,7 @@
                                                     @enderror
                                                 </div>
                                                 <button type="submit" class="btn btn-primary">Submit</button>
-                                                <a href="/kategori" type="button" class="btn btn-danger">Kembali</a>
+                                                <a href="{{ route('kategori.index') }}" type="button" class="btn btn-danger">Kembali</a>
                                             </form>
                                         </div> <!-- end col -->
                                     </div>
