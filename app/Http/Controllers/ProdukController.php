@@ -12,7 +12,8 @@ class ProdukController extends Controller
     public function index()
     {
         $produk = Produk::with('kategori')->paginate(10);
-        return view('admin.produk_admin.index', compact('produk'));
+        $no = 1;
+        return view('admin.produk_admin.index', compact('produk', 'no'));
     }
 
     public function create()
@@ -24,7 +25,7 @@ class ProdukController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'kategori_id' => 'required|exists:kategori,id',
+            'kategori_id' => 'required|exists:kategori,kategori_id',
             'nama' => 'required|string|max:255',
             'deskripsi' => 'nullable|string',
             'harga' => 'required|numeric|min:0',
@@ -38,10 +39,16 @@ class ProdukController extends Controller
             $namaFile = time() . '_' . $gambar->getClientOriginalName();
             $path = $gambar->storeAs('produk', $namaFile, 'public');
             $data['gambar'] = $path;
+
+            Produk::create([
+                'nama' => $request->nama,
+                'harga' => $request->harga,
+                'gambar' => 'produk/' . $namaFile,
+            ]);
         }
 
         Produk::create($data);
-        return redirect()->route('admin.produk_admin.index')->with('success', 'Produk berhasil ditambahkan.');
+        return redirect('/produk')->with('success', 'Produk berhasil ditambahkan.');
     }
 
     public function edit($id)
@@ -49,7 +56,7 @@ class ProdukController extends Controller
         try {
             $produk = Produk::findOrFail($id);
         } catch (ModelNotFoundException $e) {
-            return redirect()->route('admin.produk_admin.index')->with('error', 'Produk tidak ditemukan.');
+            return redirect('/produk')->with('error', 'Produk tidak ditemukan.');
         }
         return view('admin.produk_admin.edit', compact('produk'));
     }
@@ -75,13 +82,18 @@ class ProdukController extends Controller
         }
 
         $produk->update($data);
-        return redirect()->route('admin.produk_admin.index')->with('success', 'Produk berhasil diperbarui.');
+        return redirect('/produk')->with('success', 'Produk berhasil diperbarui.');
     }
 
-    public function destroy($id)
+    public function hapus($id)
     {
-        $produk = Produk::findOrFail($id);
-        $produk->delete();
-        return redirect()->route('admin.produk_admin.index')->with('success', 'Produk berhasil dihapus.');
+        Produk::where('produk_id', $id)->delete();
+        return redirect('/produk')->with(['success' => 'Produk berhasil dihapus.']);
+    }
+
+    public function totalHargaProduk()
+    {
+        $totalHarga = Produk::sum('harga'); // Menjumlahkan semua harga produk
+        return view('total-harga', compact('totalHarga'));
     }
 }

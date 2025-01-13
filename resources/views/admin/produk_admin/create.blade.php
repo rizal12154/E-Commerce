@@ -15,7 +15,7 @@
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
-                                <li class="breadcrumb-item"><a href="/produk_admin">Produk</a></li>
+                                <li class="breadcrumb-item"><a href="/produk">Produk</a></li>
                                 <li class="breadcrumb-item active">Tambah Barang</li>
                             </ol>
                         </div>
@@ -58,7 +58,7 @@
 
                                                 <div class="mb-3">
                                                     <label for="harga" class="form-label">Harga</label>
-                                                    <input type="number" name="harga" value="{{ old('harga') }}"
+                                                    <input type="text" name="harga" value="{{ old('harga') }}"
                                                         id="harga"
                                                         class="form-control @error('harga') is-invalid @enderror" required
                                                         placeholder="Harga...">
@@ -90,14 +90,10 @@
                                                 <div class="mb-3">
                                                     <label for="kategori_id" class="form-label">Kategori Barang</label>
                                                     <select name="kategori_id" id="kategori_id"
-                                                        class="form-select @error('kategori_id') is-invalid @enderror"
-                                                        required>
-                                                        <option value="" disabled selected>Pilih Kategori</option>
+                                                        class="form-select @error('kategori_id') is-invalid @enderror value="{{ old('kategori_id') }}>
+                                                        <option value="">Pilih Kategori</option>
                                                         @foreach ($kategori as $get)
-                                                            <option value="{{ $get->id }}"
-                                                                {{ old('kategori_id') == $get->id ? 'selected' : '' }}>
-                                                                {{ $get->nama }}
-                                                            </option>
+                                                            <option value="{{ $get->kategori_id }}">{{ $get->nama }}</option>
                                                         @endforeach
                                                     </select>
                                                     @error('kategori_id')

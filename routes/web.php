@@ -27,7 +27,12 @@ Route::get('/produk/create', [ProdukController::class, 'create'])->name('produk.
 Route::post('/produk', [ProdukController::class, 'store'])->name('produk.store');
 Route::get('/produk/{id}', [ProdukController::class, 'edit'])->name('produk.edit');
 Route::put('/produk/{id}', [ProdukController::class, 'update'])->name('produk.update');
-Route::delete('/produk/{id}', [ProdukController::class, 'destroy'])->name('produk.destroy');
+Route::delete('/produk/{id}/delete', [ProdukController::class, 'hapus'])->name('produk.hapus');
+Route::get('/total-harga-produk', [ProdukController::class, 'totalHargaProduk']);
+
+Route::get('/keranjang', [KeranjangController::class, 'index'])->name('keranjang.index');
+Route::post('/keranjang/tambah', [KeranjangController::class, 'tambah'])->name('keranjang.store');
+
 
 
 Route::controller(User::class)->group(function () {

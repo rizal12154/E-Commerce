@@ -50,27 +50,34 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            @foreach ($produk as $get)
+                                        @foreach ($produk as $get)
+                                            <tr>
                                                 <td>{{ $no++ }} </td>
                                                 <td>{{ $get->nama }}</td>
                                                 <td>{{ $get->deskripsi }}</td>
                                                 <td>{{ $get->harga }}</td>
                                                 <td>{{ $get->stok }}</td>
-                                                <td>{{ $get->kategori->kategori }}</td>
-                                                <td><img src="{{ asset('storage/' . $get->gambar) }}" alt="gambar"
-                                                        style="width: 100px;"></td>
-                                                <td class="table-action">
-                                                    {{-- <a href="javascript:void(0);" class="action-icon"> <i
-                                                                class="mdi mdi-eye"></i></a> --}}
-                                                    <a href="javascript:void(0);" class="action-icon"> <i
-                                                            class="mdi mdi-square-edit-outline"></i></a>
-                                                    <a href="javascript:void(0);" class="action-icon"> <i
-                                                            class="mdi mdi-delete"></i></a>
+                                                <td>{{ $get->kategori->nama ?? 'Kategori tidak ditemukan' }}</td>
+                                                <td>
+                                                    @if ($get->gambar)
+                                                        <img src="{{ asset('storage/' . $get->gambar) }}" alt="gambar"
+                                                            style="width: 100px;">
+                                                    @else
+                                                        <span>Gambar tidak tersedia</span>
+                                                    @endif
                                                 </td>
-                                        </tr>
+                                                <td class="table-action">
+                                                    <a href="/produk/{{ $get->kategori_id }}/edit" class="action-icon">
+                                                        <i class="mdi mdi-square-edit-outline"></i>
+                                                    </a>
+                                                    <a href="/produk/{{ $get->kategori_id }}/delete" class="action-icon">
+                                                        <i class="mdi mdi-delete"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
                                         @endforeach
                                     </tbody>
+
                                 </table>
                             </div>
                         </div> <!-- end card-body-->

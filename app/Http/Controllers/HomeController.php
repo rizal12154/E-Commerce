@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Produk;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,6 +14,9 @@ class HomeController extends Controller
 
     public function shop()
     {
-        return view('home.shop');
+        $produk = Produk::all();
+        $gambar = $produk->first()?->gambar;
+
+        return view('home.shop', compact('produk', 'gambar'));
     }
 }
