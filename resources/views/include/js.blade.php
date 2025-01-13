@@ -18,6 +18,21 @@
 <!-- App js -->
 <script src="{{ asset('') }}assets/js/app.min.js"></script>
 
+<script>
+    document.querySelector('.btn-open-modal').addEventListener('click', function() {
+        const selectedMethod = document.querySelector('input[name="billingOptions"]:checked');
+        if (selectedMethod) {
+            document.getElementById('selected-payment-method').innerText = selectedMethod.nextElementSibling
+                .textContent;
+            const modal = new bootstrap.Modal(document.getElementById('paymentConfirmationModal'));
+            modal.show();
+        } else {
+            alert('Please select a payment method.');
+        }
+    });
+</script>
+
+
 {{-- <!-- Datatable js -->
 <script src="{{ asset('') }}assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="{{ asset('') }}assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>

@@ -68,7 +68,7 @@
                                 Taxes and shipping calculated at checkout
                             </p>
                             <div class="cart-checkout-btn">
-                                <a href="/pembayaran/create"
+                                <a href="/pesanan"
                                     class="tf-btn w-100 btn-fill animate-hover-btn radius-3 justify-content-center">
                                     <span>Check out</span>
                                 </a>

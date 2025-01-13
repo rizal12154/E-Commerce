@@ -33,8 +33,13 @@ Route::get('/total-harga-produk', [ProdukController::class, 'totalHargaProduk'])
 Route::get('/keranjang', [KeranjangController::class, 'index'])->name('keranjang.index');
 Route::post('/keranjang/tambah', [KeranjangController::class, 'tambah'])->name('keranjang.store');
 
+Route::get('/pesanan', [PesananController::class, 'index'])->name('pesanan.index');
+Route::get('/pesanan/{id}', [PesananController::class, 'show'])->name('pesanan.show');
+Route::post('/pesanan', [PesananController::class, 'store'])->name('pesanan.store');
+Route::post('/pesanan/simpan-sementara', [PesananController::class, 'simpanSementara'])->name('pesanan.simpanSementara');
 
 
-Route::controller(User::class)->group(function () {
-    Route::get('/user', 'index')->name('user.index');
-});
+Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pesanan.bayar');
+Route::post('/pesanan/{id}/bayar', [PembayaranController::class, 'store'])->name('pesanan.bayar.store');
+Route::get('/pesanan/{id}/bayar/{metode_pembayaran}', [PembayaranController::class, 'bayar'])->name('pesanan.');
+
