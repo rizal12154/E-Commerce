@@ -34,21 +34,24 @@ class ProdukController extends Controller
         ]);
 
         $data = $request->only(['kategori_id', 'nama', 'deskripsi', 'harga', 'stok']);
+
         if ($request->hasFile('gambar')) {
             $gambar = $request->file('gambar');
             $namaFile = time() . '_' . $gambar->getClientOriginalName();
             $path = $gambar->storeAs('produk', $namaFile, 'public');
             $data['gambar'] = $path;
-
-            Produk::create([
-                'nama' => $request->nama,
-                'harga' => $request->harga,
-                'gambar' => 'produk/' . $namaFile,
-            ]);
         }
 
         Produk::create($data);
+
         return redirect('/produk')->with('success', 'Produk berhasil ditambahkan.');
+    }
+
+
+    public function show($id)
+    {
+        $produk = Produk::findOrFail($id);
+        return view('produk.show', compact('produk'));
     }
 
     public function edit($id)

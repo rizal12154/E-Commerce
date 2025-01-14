@@ -25,10 +25,12 @@ Route::delete('/kategori/{id}', [KategoriController::class, 'destroy'])->name('k
 Route::get('/produk', [ProdukController::class, 'index'])->name('produk.index');
 Route::get('/produk/create', [ProdukController::class, 'create'])->name('produk.create');
 Route::post('/produk', [ProdukController::class, 'store'])->name('produk.store');
-Route::get('/produk/{id}', [ProdukController::class, 'edit'])->name('produk.edit');
+Route::get('/produk/{id}', [ProdukController::class, 'show'])->name('produk.show');
+Route::get('/produk/{id}/edit', [ProdukController::class, 'edit'])->name('produk.edit');
 Route::put('/produk/{id}', [ProdukController::class, 'update'])->name('produk.update');
 Route::delete('/produk/{id}/delete', [ProdukController::class, 'hapus'])->name('produk.hapus');
 Route::get('/total-harga-produk', [ProdukController::class, 'totalHargaProduk']);
+
 
 Route::get('/keranjang', [KeranjangController::class, 'index'])->name('keranjang.index');
 Route::post('/keranjang/tambah', [KeranjangController::class, 'tambah'])->name('keranjang.store');
@@ -42,4 +44,3 @@ Route::post('/pesanan/simpan-sementara', [PesananController::class, 'simpanSemen
 Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pesanan.bayar');
 Route::post('/pesanan/{id}/bayar', [PembayaranController::class, 'store'])->name('pesanan.bayar.store');
 Route::get('/pesanan/{id}/bayar/{metode_pembayaran}', [PembayaranController::class, 'bayar'])->name('pesanan.');
-

@@ -149,7 +149,7 @@
                         <div class="card-product">
                             <div class="card-product-wrapper">
                                 @foreach ($produk as $get)
-                                    <a href="javascript:void(0)" class="product-img">
+                                    <a href="{{ route('produk.show', $get->produk_id) }}" class="product-img">
                                         <img class="img-product" src="{{ 'storage/' . $get->gambar }}"
                                             alt="image-product" width="100%" height="auto">
                                     </a>
@@ -168,7 +168,7 @@
                                             <span class="tooltip">Quick View</span>
                                         </a>
                                     </div>
-
+                                    
                             </div>
                             <div class="card-product-info">
                                 <a href="/produk" class="title link">{{ $get->nama }}</a>
